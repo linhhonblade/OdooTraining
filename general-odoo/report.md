@@ -291,25 +291,30 @@ View time shifts
 
 - Create invoice (Offer cash discount)
 
-![](accounting/cash-discount-invoice.png){width=50%}\ ![](accounting/payment-term.png){width=50%}
+![](accounting/cash-discount-invoice.png)
+
+## 1 - Customer Invoice to Payments
+
+- Create invoice (Offer cash discount)
+
+![](accounting/payment-term.png)
 
 ## 1 - Customer Invoice to Payments
 
 - Register a payment from a customer invoice (auto reconcile)
 - Create a new payment (payment matching)
 
-![An invoice](accounting/sample-invoice.png)
+## 1 - Customer Invoice to Payments
+
+![Customer invoice](accounting/sample-invoice.png){width=80%}
 
 ## 1 - Customer Invoice to Payments
 
-- Register a payment from a customer invoice (auto reconcile)
-- Create a new payment (payment matching)
-
-![](accounting/invoice-partially-paid.png)
+![Customer invoice partially paid](accounting/invoice-paid-partially.png)
 
 ## 1 - Customer Invoice to Payments
 
-- Auto-reconcile the invoice with correspoding payments
+- Auto-reconcile the invoice with corresponding payments
 
 ![Payment paid from invoice](accounting/payment-paid-from-invoice.png)
 
@@ -317,20 +322,58 @@ View time shifts
 
 - Payment that is created manually have to do Payment Matching (upper right button)
 
-![Payment created manually](accounting/payment-create.png)
+![Payment created manually](accounting/manual-payment.png)
 
 ## 1 - Customer Invoice to Payments
 
-![Bank statement](accounting/bank-statement.png){width=90%}
+- Payment that is created manually have to do Payment Matching (upper right button)
+
+![Payment Matching](accounting/payment-matching.png)
 
 ## 1 - Customer Invoice to Payments
 
-![Reconciliation](accounting/reconcile-bank-stm.png)
+![Reconcile Payment and Invoice](accounting/reconcile-payment-invoice.png)
+
+## 1 - Customer Invoice to Payments
+
+- Payment after reconciled with invoice will have link to the invoice
+
+![Reconciled Payment](accounting/payment-after-reconcile.png)
+
+## 1 - Customer Invoice to Payments
+
+- Bank Journal keeps track of payment which are not linked to bank statements
+- Create/Import bank satements to reconcile with the outstanding payments
+
+![Bank Journal](accounting/bank-journal.png)
+
+## 1 - Customer Invoice to Payments
+
+- Bank Journal keeps track of payment which are not linked to bank statements
+- Create/Import bank satements to reconcile with the outstanding payments
+
+![Bank Journal Reconciliation Report](accounting/bank-reconciliation.png)
+
+
+## 1 - Customer Invoice to Payments
+
+![Bank Statement](accounting/bank-statement.png){width=90%}
+
+## 1 - Customer Invoice to Payments
+
+![Bank Journal when there are new bank statements not linked to a payment](accounting/bank-journal-to-reconcile.png)
+
+## 1 - Customer Invoice to Payments
+
+![Bank Journal Reconciliation Report](accounting/bank-reconciliation-when-have-bank-statement.png)
+
+## 1 - Customer Invoice to Payments
+
+![Reconciliation](accounting/reconcile-payment-bank-statement.png)
 
 ## 1 - Customer Invoice to Payments
 
 ![Reconciliation](accounting/reconcile-bank-stm-2.png)
-
 
 ## 2 - Vendor Bills to Payments
 
@@ -380,7 +423,11 @@ Entries are posted when confirm the bills
 
 ## 7 - Register Customer Payments by Checks
 
-![Undeposited Fund](accounting/undeposited-funds.png)\ ![One Journal Entry](accounting/one-journal-entry.png)
+![Undeposited Fund](accounting/undeposited-funds.png)
+
+## 7 - Register Customer Payments by Checks
+
+![One Journal Entry](accounting/one-journal-entry.png)
 
 
 ## 7.1 - Undeposited Funds
@@ -405,9 +452,28 @@ Entries are posted when confirm the bills
 
 ## 10 - Reconciliation Model
 
+3 types:
+
 - Write-off button
 - Suggestion of counterpart values
 - Match existing invoice/bills
+
+## 10 - Reconciliation Model
+
+![Write-off button](accounting/reconciliation_models_button.png)
+
+## 10 - Reconciliation Model
+
+![Suggest Counterpart Value](accounting/reconciliation_models_suggestion.png)
+
+## 10 - Reconciliation Model
+
+![Match existing invoices/bills](accounting/payment-matching.png)
+
+## 10 - Reconciliation Model
+
+![Configuration](accounting/reconciliation-model-config.png)
+
 
 ## 11 - Fiscality
 
@@ -421,7 +487,37 @@ Entries are posted when confirm the bills
 
 ## 11.1 - Taxes
 
-- add/edit/active/deactive tax
+![Tax Config](accounting/tax-config.png)
+
+## 11.1 - Taxes
+
+- add/edit/activate/deactivate tax
+
+![Taxes list](accounting/tax-list.png)
+
+## 11.1 - Taxes
+
+- add/edit/activate/deactivate tax
+
+![Taxes Configuration](accounting/tax-edit.png)
+
+## 11.1 - Taxes
+
+- add/edit/activate/deactivate tax
+
+![Taxe Configuration](accounting/tax-edit2.png)
+
+| Tax Name         | Back end                                 |
+| Label on Invoice | Taxes column on exported invoice         |
+| Tax Group        | Above the Total line on exported invoice |
+| Tax Grid         | Help generate Tax Report automatically   |
+
+## 11.1 - Taxes
+
+Taxes and reports are usually already pre-configured: a Fiscal Localization Package is installed according to the country you select at the creation of your database.
+
+## 11.1 - Taxes
+
 - verify VAT number
 - withholding tax (Retention tax group, negative value)
 
