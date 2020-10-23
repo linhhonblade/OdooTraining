@@ -67,23 +67,29 @@ Development > Stagging > Production
 
 ## Tabs
 
-History
+### History
+
 ![History](interface-branches-history.png)
 
-Mail
+### Mail
+
 ![Mail](interface-branches-mails.png)
 
-Shell
+### Shell
+
 ![Shell](interface-branches-shell.png)
 
-Editor
+### Editor
+
 ![Edit](interface-branches-editor.png)
 
-Logs
+### Logs
+
 ![Logs](interface-branches-logs.png)
 
-Backups
+### Backups
 ![Backups](interface-branches-backups.png)
 
-Settings
+### Settings
+
 ![Settings](interface-branches-settings.jpg)
