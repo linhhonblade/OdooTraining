@@ -7,9 +7,13 @@
 ## Setup project
 
 ![](deploy.png)
+
 ![](github-signin.png)
+
 ![](github-authorize.png)
+
 ![](deploy-form.png)
+
 ![](interface-branches.png)
 
 ## Stages
@@ -64,9 +68,15 @@ Development > Stagging > Production
 ## Tabs
 
 ![History](interface-branches-history.png)
+
 ![Mail](interface-branches-mails.png)
+
 ![Shell](interface-branches-shell.png)
+
 ![Edit](interface-branches-editor.png)
+
 ![Logs](interface-branches-logs.png)
+
 ![Backups](interface-branches-backups.png)
+
 ![Settings](interface-branches-settings.jpg)
