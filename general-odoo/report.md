@@ -487,7 +487,7 @@ Entries are posted when confirm the bills
 
 ## 11.1 - Taxes
 
-![Tax Config](accounting/tax-config.png)
+![Tax Settings](accounting/tax-config.png)
 
 ## 11.1 - Taxes
 
@@ -507,6 +507,8 @@ Entries are posted when confirm the bills
 
 ![Taxe Configuration](accounting/tax-edit2.png)
 
+|                  |                                          |
+| ---------------- | ---------------------------------------- |
 | Tax Name         | Back end                                 |
 | Label on Invoice | Taxes column on exported invoice         |
 | Tax Group        | Above the Total line on exported invoice |
@@ -514,30 +516,57 @@ Entries are posted when confirm the bills
 
 ## 11.1 - Taxes
 
-Taxes and reports are usually already pre-configured: a Fiscal Localization Package is installed according to the country you select at the creation of your database.
+> Taxes and reports are usually already pre-configured: a Fiscal Localization Package is installed according to the country you select at the creation of your database.
 
 ## 11.1 - Taxes
 
-- verify VAT number
-- withholding tax (Retention tax group, negative value)
+> withholding tax is a government requirement for the payer of a customer invoice to withhold or deduct tax from the payment, and pay that tax to the government.
 
-![](accounting/tax-advance-option.png)
+![Retention Tax Config](accounting/retention04.png)
+
+## 11.1 - Taxes
+
+![Retention Tax Config](accounting/retention02.png)
+
+## 11.1 - Taxes
+
+![Retention Tax in Invoice](accounting/retention03.png)
 
 ## 11.2 - Fiscal Position
 
 > If a customer has a specific fiscal position, the default tax may be replaced by another
 
-- specific tax on a specific product
-- TaxCloud API
-- tax and account mapping
+> Fiscal Positions allow you to create sets of rules to automatically adapt the taxes and the accounts used for a transaction.
 
-![](accounting/tax-acc-mapping.png)
+## 11.2 - Fiscal Position
+
+Can be applied in various ways:
+
+- automatically applied, based on some rules
+
+![Fiscal Position automatically applied for customers and vendors in Europe](accounting/tax-acc-mapping.png)
+
+## 11.2 - Fiscal Position
+
+- automatically applied, based on some rules
+- manually applied on a transaction
+
+![Choose Fiscal Position manually on Sale Orders, Invoices, Bills](accounting/fiscal-positions-transaction.png)
 
 ## 11.2 - Fiscal Position
 
 - automatically applied, based on some rules
 - manually applied on a transaction
 - assigned to a partner, on its contact form
+
+![](accounting/fiscal-positions-transaction.png)
+
+## 11.2 - Fiscal Position
+
+> TaxCloud calculates sales tax in real-time for every state, city, and special jurisdiction in the United States.
+
+![Settings](accounting/taxcloud02.png)
+
 
 ## 11.3 - Tax Inlcude/Exclude
 
@@ -562,14 +591,49 @@ Taxes and reports are usually already pre-configured: a Fiscal Localization Pack
 - your product default sale price is 8.26€ tax excluded
 - but we want to sell it at 10€, tax included, in our shops or eCommerce website
 
+## 11.3 - Tax Include/Exclude
+
+![Config default tax exclude](accounting/price_B2C_B2B01.png)
+
+## 11.3 - Tax Include/Exclude
+
+![Create B2C pricelist](accounting/price_B2C_B2B02.png)
+
+- activate pricelist in Sale Settings
+
+## 11.3 - Tax Include/Exclude
+
+Create B2C Fiscal Position
+
+![B2C Fiscal Position](accounting/price_B2C_B2B03.png)
+
+## 11.3 - Tax Include/Exclude
+
+![B2B Quotation](accounting/price_B2C_B2B04.png)
+
+## 11.3 - Tax Include/Exclude
+
+![B2C Quotation](accounting/price_B2C_B2B05.png)
+
+## 11.4 - Cash Basis Tax
+
+![](accounting/cash-basis-setting.png)
+
 ## 11.4 - Cash Basis Tax
 
 ![](accounting/cash-basis-tax.png)
 
 ## 11.4 - Cash Basis Tax
 
-![](accounting/cash-basis-setting.png)
+![After validate invoice](accounting/when-validate-invoice.png)
 
+## 11.4 - Cash Basis Tax
+
+![Receive the payment](accounting/when-receive-payment.png)
+
+## 11.4 - Cash Basis Tax
+
+![Reconcile payment and invoice](accounting/after-reconcile-payment-invoice.png)
 
 ## 12 - Reports
 
@@ -590,6 +654,53 @@ Taxes and reports are usually already pre-configured: a Fiscal Localization Pack
 ![](accounting/analytic-tag.png)
 
 - auto create an analytic account when creating a project
+
+## 14 - Inventory Valuation
+
+Costing methods:
+- Standard Price
+- Average Price
+- FIFO
+- LIFO
+
+## 14 - Inventory Valuation
+
+Costing methods:
+![Standard Price](accounting/inventory-standard-price.png)
+
+## 14 - Inventory Valuation
+
+Costing methods:
+![Average Price](accounting/inventory-average-price.png)
+
+## 14 - Inventory Valuation
+
+Costing methods:
+![FIFO](accounting/inventory-fifo.png)
+
+## 14 - Inventory Valuation
+
+Costing methods:
+![LIFO](accounting/inventory-lifo.png)
+
+## 14 - Inventory Valuation
+
+2 types:
+- Periodic Inventory Evaluation
+- Perpetual Inventory Evaluation
+
+## 14 - Inventory Valuation
+
+Periodic Inventory Evaluation:
+> At the end of the month or year, the accountant post one journal entry representing the value of the physical inventory.
+> At the end of the month/year, the company do a physical inventory (or just rely on the inventory in Odoo). They multiply the quantity of each product by its cost to know the inventory value of the company.
+
+## 14 - Inventory Valuation
+
+Perpetual Inventory Evaluation:
+>goods reception and outgoing shipments are directly posted in the accounting. The inventory valuation is always up-to-date.
+
+
 
 ## 14 - Inventory Valuation
 
