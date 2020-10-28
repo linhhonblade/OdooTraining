@@ -112,3 +112,26 @@ Raise exceptions
 ### SQL constraints
 
 SQL constraints are defined through the model attribute `_sql_constraints`
+
+## Advanced Views
+
+### Tree view
+
+- `decorator-{$name}`: allow changing the style of a row’s text based on the corresponding record’s attributes.
+- `editable`: Either `top` or `bottom`. Makes the tree view editable in-place (rather than having to go through the form view), the value is the position where new rows appear.
+
+### Calendar
+
+### Search
+
+### Gantt (EE)
+
+### Graph
+
+> Pivot views (element `<pivot>`) a multidimensional table, allows the selection of filers and dimensions to get the right aggregated dataset before moving to a more graphical overview. The pivot view shares the same content definition as graph views.
+
+<mark>Graph views perform aggregations on database values, they do not work with non-stored computed fields.</mark>
+
+### Kanban
+
+Kanban views define the structure of each card as a mix of form elements (including basic HTML) and QWeb.

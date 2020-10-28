@@ -93,3 +93,4 @@ Development > Stagging > Production
 ### Settings
 
 ![Settings](interface-branches-settings.jpg)
+
