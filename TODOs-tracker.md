@@ -22,23 +22,23 @@
 
 ## Odoo Experience 2020
 
-![ An all-in-one Engineer-to-Order (ETO) Solution with Odoo Testimonial](https://www.odoo.com/event/odoo-experience-2020-2020-09-30-2020-10-02-2622/track/an-all-in-one-engineer-to-order-eto-solution-with-odoo-2146) - Duy Vu
+[ An all-in-one Engineer-to-Order (ETO) Solution with Odoo Testimonial](https://www.odoo.com/event/odoo-experience-2020-2020-09-30-2020-10-02-2622/track/an-all-in-one-engineer-to-order-eto-solution-with-odoo-2146) - Duy Vu
 
-![What to do (and not to do) When Adjusting a Localization](https://www.odoo.com/event/odoo-experience-2020-2020-09-30-2020-10-02-2622/track/what-to-do-and-not-to-do-when-adjusting-a-localization-2091)
+[What to do (and not to do) When Adjusting a Localization](https://www.odoo.com/event/odoo-experience-2020-2020-09-30-2020-10-02-2622/track/what-to-do-and-not-to-do-when-adjusting-a-localization-2091)
 
-![Best Practices in Handling Performance Issues](https://www.odoo.com/event/odoo-experience-2020-2020-09-30-2020-10-02-2622/track/best-practices-in-handling-performance-issues-3857)
+[Best Practices in Handling Performance Issues](https://www.odoo.com/event/odoo-experience-2020-2020-09-30-2020-10-02-2622/track/best-practices-in-handling-performance-issues-3857)
 
-![Change Management: the Odoo Implementation Methodology!](https://www.odoo.com/event/odoo-experience-2020-2020-09-30-2020-10-02-2622/track/change-management-the-odoo-implementation-methodology-3926)
+[Change Management: the Odoo Implementation Methodology!](https://www.odoo.com/event/odoo-experience-2020-2020-09-30-2020-10-02-2622/track/change-management-the-odoo-implementation-methodology-3926)
 
-![Odoo Strategy for Mid-Market & Corporate Companies](https://www.odoo.com/event/odoo-experience-2020-2020-09-30-2020-10-02-2622/track/odoo-strategy-for-mid-market-corporate-companies-3834)
+[Odoo Strategy for Mid-Market & Corporate Companies](https://www.odoo.com/event/odoo-experience-2020-2020-09-30-2020-10-02-2622/track/odoo-strategy-for-mid-market-corporate-companies-3834)
 
-![How to Apply the Odoo Implementation Methodology to Large Projects](https://www.odoo.com/event/odoo-experience-2020-2020-09-30-2020-10-02-2622/track/how-to-apply-the-odoo-implementation-methodology-to-large-projects-3930)
+[How to Apply the Odoo Implementation Methodology to Large Projects](https://www.odoo.com/event/odoo-experience-2020-2020-09-30-2020-10-02-2622/track/how-to-apply-the-odoo-implementation-methodology-to-large-projects-3930)
 
-![How to do a ROI Analysis Before Choosing a New ERP](https://www.odoo.com/event/odoo-experience-2020-2020-09-30-2020-10-02-2622/track/how-to-do-a-roi-analysis-before-choosing-a-new-erp-3830)
+[How to do a ROI Analysis Before Choosing a New ERP](https://www.odoo.com/event/odoo-experience-2020-2020-09-30-2020-10-02-2622/track/how-to-do-a-roi-analysis-before-choosing-a-new-erp-3830)
 
-![Odoo high-performance API: millions of daily transactions, the case of Go-Jek](https://www.odoo.com/event/odoo-experience-2020-2020-09-30-2020-10-02-2622/track/odoo-high-performance-api-millions-of-daily-transactions-the-case-of-go-jek-2061)
+[Odoo high-performance API: millions of daily transactions, the case of Go-Jek](https://www.odoo.com/event/odoo-experience-2020-2020-09-30-2020-10-02-2622/track/odoo-high-performance-api-millions-of-daily-transactions-the-case-of-go-jek-2061)
 
-![Deploying & Scaling your Odoo Server](https://www.odoo.com/event/odoo-experience-2020-2020-09-30-2020-10-02-2622/track/deploying-scaling-your-odoo-server-3843)
+[Deploying & Scaling your Odoo Server](https://www.odoo.com/event/odoo-experience-2020-2020-09-30-2020-10-02-2622/track/deploying-scaling-your-odoo-server-3843)
 
 # What I want to read later
 

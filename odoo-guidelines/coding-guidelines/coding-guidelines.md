@@ -134,6 +134,66 @@ addons/plant_nursery/
 |   |-- plant_order_templates.xml (xml report templates)
 ```
 
+## Full structure
+
+```
+addons/plant_nursery/
+|-- __init__.py
+|-- __manifest__.py
+|-- controllers/
+|   |-- __init__.py
+|   |-- plant_nursery.py
+|   |-- portal.py
+|-- data/
+|   |-- plant_nursery_data.xml
+|   |-- plant_nursery_demo.xml
+|   |-- mail_data.xml
+|-- models/
+|   |-- __init__.py
+|   |-- plant_nursery.py
+|   |-- plant_order.py
+|   |-- res_partner.py
+|-- report/
+|   |-- __init__.py
+|   |-- plant_order_report.py
+|   |-- plant_order_report_views.xml
+|   |-- plant_order_reports.xml (report actions, paperformat, ...)
+|   |-- plant_order_templates.xml (xml report templates)
+|-- security/
+|   |-- ir.model.access.csv
+|   |-- plant_nursery_groups.xml
+|   |-- plant_nursery_security.xml
+|   |-- plant_order_security.xml
+|-- static/
+|   |-- img/
+|   |   |-- my_little_kitten.png
+|   |   |-- troll.jpg
+|   |-- lib/
+|   |   |-- external_lib/
+|   |-- src/
+|   |   |-- js/
+|   |   |   |-- widget_a.js
+|   |   |   |-- widget_b.js
+|   |   |-- scss/
+|   |   |   |-- widget_a.scss
+|   |   |   |-- widget_b.scss
+|   |   |-- xml/
+|   |   |   |-- widget_a.xml
+|   |   |   |-- widget_a.xml
+|-- views/
+|   |-- assets.xml
+|   |-- plant_nursery_menus.xml
+|   |-- plant_nursery_views.xml
+|   |-- plant_nursery_templates.xml
+|   |-- plant_order_views.xml
+|   |-- plant_order_templates.xml
+|   |-- res_partner_views.xml
+|-- wizard/
+|   |--make_plant_order.py
+|   |--make_plant_order_views.xml
+```
+
+
 # XML Files
 
 ## Format
