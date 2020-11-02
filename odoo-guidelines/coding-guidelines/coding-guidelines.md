@@ -624,7 +624,7 @@ Thank you for listening!
 
 ## Refs
 
-[In addition to the Idiomatics part](http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html)(dead link)
+[Odoo Guidelines](https://www.odoo.com/documentation/13.0/reference/guidelines.html)
 
 Học lại
 - OOAD
