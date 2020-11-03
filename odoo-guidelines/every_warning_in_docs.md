@@ -28,3 +28,15 @@ fields.Date.to_date(self._context.get('date form'))
 - Datetime fields are stored as timestamp without timezone columns in the database and are stored in the UTC timezone. This is by design, as it makes the Odoo database independent from the timezone of the hosting server system. Timezone conversion is managed entirely by the client side.
 - If you consider introducing new exceptions, check out the odoo.addons.test_exceptions module.
 
+# Q&A
+
+## Differences between ir and res in base module
+
+- ir = information repository
+- res = resource
+
+A resource matches something in the 'real world' that you store in OpenERP - to represent information about partners, or products or accounting transactions.
+
+The Information Repository is used to store data needed by OpenERP to know how to work as an application - to define menus, windows, views, wizards, database tables, etc.
+
+When we specify any files inside this demo field in the manifest- the data is only installed if the ‘Load Demo Data’ option is enabled at the time of database creation, otherwise, the demo data will not be loaded.

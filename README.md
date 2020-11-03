@@ -8,5 +8,5 @@ Most of these reference to Odoo dev and user documentations:
 
 Coding tutorials:
 
-- [Build A Module](https://www.odoo.com/documentation/13.0/howtos/backend.html): [Code repo]((https://github.com/linhhonblade/openacademy))
+- [Build A Module](https://www.odoo.com/documentation/13.0/howtos/backend.html): [Code repo](https://github.com/linhhonblade/openacademy)
 - [Build A Website](https://www.odoo.com/documentation/13.0/howtos/website.html): [Code repo](https://github.com/linhhonblade/academy)
