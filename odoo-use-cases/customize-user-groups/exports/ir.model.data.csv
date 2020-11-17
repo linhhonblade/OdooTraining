@@ -1,0 +1,4 @@
+"id","model","res_id","id","name","module","noupdate","studio"
+"__export__.ir_model_data_15760_7cc15127","res.groups","57","__export__.ir_model_data_15760_7cc15127","pmo1","pmo","",""
+"__export__.ir_model_data_15766_3cc68fba","res.groups","58","__export__.ir_model_data_15766_3cc68fba","pmo2","pmo","",""
+"__export__.ir_model_data_15695_eedcd455","res.groups","55","__export__.ir_model_data_15695_eedcd455","sales_pmo_manager_00edd323-620d-4d23-9f76-63ca513136b7","studio_customization","True","True"

@@ -1,0 +1,51 @@
+"id","sequence","name","trigger","model_id","help","state","type","active","activity_type_id","activity_user_type","channel_ids","partner_ids","filter_domain","filter_pre_domain","binding_model_id","binding_type","binding_view_types","child_ids","trg_date_range","trg_date_range_type","activity_date_deadline_range","activity_date_deadline_range_type","template_id","id","groups_id","link_field_id","sms_mass_keep_log","activity_note","on_change_field_ids","code","activity_user_id","action_server_id","sms_template_id","activity_summary","crud_model_id","trg_date_id","trigger_field_ids","usage","trg_date_calendar_id","activity_user_field_name","fields_lines"
+"__export__.base_automation_2_deb6ca39","5","Update Order for Invoice Line","On Creation & Update","Journal Item","","object_write","ir.actions.server","True","","specific","","","","","","action","list,form","","0","","0","days","","__export__.base_automation_2_deb6ca39","","","True","<p><br></p>","","# Available variables:
+#  - env: Odoo Environment on which the action is triggered
+#  - model: Odoo Model of the record on which the action is triggered; is a void recordset
+#  - record: record on which the action is triggered; may be void
+#  - records: recordset of all records on which the action is triggered in multi-mode; may be void
+#  - time, datetime, dateutil, timezone: useful Python libraries
+#  - log: log(message, level='info'): logging function to record debug information in ir.logging table
+#  - UserError: Warning Exception to use with raise
+# To return an action, assign: action = {...}
+
+
+record['x_order_id'] = record.sale_line_ids[1].order_id
+","","Update Order for Invoice Line","","","","","","base_automation","","user_id","ir.server.object.lines,363"
+"__export__.base_automation_3_0c0deb17","5","Update Order in Invoice","On Creation & Update","Journal Entry","","object_write","ir.actions.server","True","","specific","","","","","","action","list,form","","0","","0","days","","__export__.base_automation_3_0c0deb17","","","True","<p><br></p>","","# Available variables:
+#  - env: Odoo Environment on which the action is triggered
+#  - model: Odoo Model of the record on which the action is triggered; is a void recordset
+#  - record: record on which the action is triggered; may be void
+#  - records: recordset of all records on which the action is triggered in multi-mode; may be void
+#  - time, datetime, dateutil, timezone: useful Python libraries
+#  - log: log(message, level='info'): logging function to record debug information in ir.logging table
+#  - UserError: Warning Exception to use with raise
+# To return an action, assign: action = {...}
+
+
+
+","","Update Order in Invoice","","","","","","base_automation","","user_id","ir.server.object.lines,366"
+"__export__.base_automation_6_20b95830","5","Update PMO","On Creation & Update","Users","","code","ir.actions.server","True","","specific","","","[]","","","action","list,form","","0","","0","days","","__export__.base_automation_6_20b95830","","","True","<p><br></p>","","# Available variables:
+#  - env: Odoo Environment on which the action is triggered
+#  - model: Odoo Model of the record on which the action is triggered; is a void recordset
+#  - record: record on which the action is triggered; may be void
+#  - records: recordset of all records on which the action is triggered in multi-mode; may be void
+#  - time, datetime, dateutil, timezone: useful Python libraries
+#  - log: log(message, level='info'): logging function to record debug information in ir.logging table
+#  - UserError: Warning Exception to use with raise
+# To return an action, assign: action = {...}
+
+# WARNING! This script needs to be updated whenever a new pmo group is created
+
+
+is_pmo_group = [record.has_group('pmo.pmo1'), record.has_group('pmo.pmo2')]
+
+if sum(is_pmo_group) > 1:
+  raise Warning('User can only join one PMO')
+elif record.has_group('pmo.pmo1'):
+  record['x_studio_pmo_id'] = 57
+elif record.has_group('pmo.pmo2'):
+  record['x_studio_pmo_id'] = 58
+else:
+  record['x_studio_pmo_id'] = []
+","","Update PMO","","","","","","base_automation","","user_id",""

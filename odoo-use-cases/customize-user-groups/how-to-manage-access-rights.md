@@ -1,3 +1,7 @@
+# Usecase Description
+
+
+
 # [Add Users and Manage Access Rights](https://www.odoo.com/documentation/user/14.0/general/odoo_basics/add_user.html)
 
 - **Group** are created to define rules to models within an application.
@@ -31,7 +35,7 @@
 - **Global rules** are **subtractive**, they must all be matched for a record to be accessible
 - **Group rules** are additive, if any of them matches (and all global rules match) then the record is accessible
 
-# Default config trong Odoo
+# Default config from Odoo
 
 ## Sale Team
 
@@ -39,14 +43,58 @@
 - Leader của một sale team có thể nhìn thấy toàn bộ documents liên quan đến sale của team cũng như của các team khác nhưng lại không nhìn được report (thuộc group Sales / User: All Documents)
 - Thằng duy nhất trong default config của Saless mà có thể nhìn được report là Sales / Administration (thằng này đồng thời có quyền config sales team và activity types - thêm, sửa, xóa)
 
+## Invoice
+
+- Trong module invoice đang có hai group
+- Invoice / Billing : xem được hết invoice (ko quan trọng của ai)
+- Invoice / Administrator: Xem được hết invoice và có quyền config
 
 # Những cái đã customize được
 
+## Giới hạn quyền của Team leader
+
+- [x] Saleperson can only access their own documents
+- [x] Sale team leader can access all documents of his/her team (including team member's documents)
+- [x] Sale team leader cannot access document from other sale team
+- [x] Sale team leader can access documents of other sale team if the owner add he/she to the follower list
+
+- Documents ở đây bao gồm :
+  - Lead/Opp (crm.lead)
+  - Order (sale.order)
+  - Order Line (sale.order.line)
+  - Invoice (Journal Entry) (account.move)
+  - Invoice Line (Journal Item) (account.move.line)
+  - Sale Analysis Report (sale.report)
+  - Invoice Statistics (account.invoice.report)
+
+**Solution**
+
 - Bỏ sales team leader ra khỏi group Sales / All Documents và thêm vào group tự tạo là Sales / All Team's Documents. Group này chỉ cho phép nhìn thấy documents của team
 - Thêm toàn bộ user vào group mới là Sales / User: Following Document. Group này cho phép user nhìn thấy các documents được link đến cái opportunity mà người đó được mời follow
+
+- Thay thế group Invoice / Billing bằng group Invoince / Own Billing để users chỉ xem được invoice của mình
+
+- Thêm trường mới để link với Order cho Invoice Lines và Invoices. Thêm Automated action cho invoice và invoice lines để tự động cập nhập trường mới kia
+- Dùng trường mới thêm để tạo record rules.
+
+## Mở rộng thêm một level PMO. Một PMO quản lý nhiều Team Leader. Có nhiều PMO và nằm dưới quyền CEO
+
+[x] PMO Manager can access all documents of members in that PMO
+[x] Can share documents between PMO, other members in different teams
+
+**Solution**
+
+For every PMO, create a group and add user belong to that PMO (including PMO Manager) to that group (e.g. groups PMO1, PMO2). Set the category of those groups is PMO
+
+Create a new group named PMO Manager and add all PMO managers to that group
+
+Create a new field PMO in model Users
 
 
 # Các giải pháp khác có thể cân nhắc
 
 - Thay vì share bằng việc thêm follower trong opportunity, thì có thể thay field Saleperson: Many2one trong model Lead/Opp thành Salepersons: Many2many để có thể assign nhiều saleperson cho một Lead/Opp
 - Tạo một Automated Action để nó tự động add follower cho sale order hoặc invoice nếu như nó được link tới cái Lead/Opp mà người đó đang được mời follow (cái này đã thử mà chưa thành công)
+
+
+# Những điều còn băn khoăn
