@@ -114,7 +114,7 @@
 ### 3. Is it possible to create a routing operation without work center?
 
 - [ ] Yes
-- [ ] No
+- [x] No
 - [ ] Idk
 
 ## eCommerce
@@ -385,3 +385,621 @@ Up to 10
 - [ ] Directly in the internal notes of my RFQ
 - [x] On the product form and on the vendor form
 - [ ] All of the above
+
+### My vendor delivery date is 10 days. What will be the delivery scheduled date if I order something on the 04/15?
+
+- [ ] 04/05
+- [x] 04/25
+- [ ] 04/26
+- [ ] 04/06
+
+### Other than the purchase delivery lead time, do other lead times exist?
+
+- [x] Yes
+- [ ] No
+
+### Where will I see the scheduled date of a purchase for the first time?
+
+- [ ] On the Purchase Order.
+- [ ] On the Delivery form.
+- [x] On the Request for Quotation.
+- [ ] On the Vendor form.
+
+### I have created a reordering rule with a minimum stock of 5 units and a maximum of 10 units. When the reordering rule is triggered, how many units will it order?
+
+- [ ] As much as needed so you have a minimum of 5 units in stock
+- [ ] It will always order between 5 and 10 units
+- [x] As much as needed so you have 10 units in stock
+- [ ] It will always order 10 units
+
+### Can you create reordering rules on service type products?
+
+- [ ] Yes
+- [x] No
+- [ ] Only if they are related to a Point of Sale
+
+###  Is it possible to select several Requests for Quotation when using the call for tenders feature?
+
+- [x] Yes
+- [ ] No
+
+### What will be the status of non-selected orders in an "exclusive" Call for Tenders?
+
+- [ ] Waiting
+- [x] Cancelled
+- [ ] Purchase order
+- [ ] Archived
+- [ ] Refused
+
+### Is it true to say that "Blanket orders" is another name for "Call for Tenders"?
+
+- [ ] Yes
+- [x] No
+
+### When a "Call for tenders" is validated what becomes its status?
+
+- [ ] Draft
+- [ ] Waiting
+- [x] BID Selection
+- [ ] Ready
+- [ ] Done
+- [ ] Closed
+
+### Are Blanket Orders and Call for Tenders the same thing?
+
+- [ ] Yes
+- [x] No
+- [ ] Yes, but only for storable products
+- [ ] Yes, but only for services
+
+### How can I automatically cancel all other Purchase Orders I do not choose when I accept only one of them?
+
+- [ ] You can't do that in Odoo
+- [ ] By selecting the exclusive RFQ selection on the purchase agreement form
+- [x] By selecting the exclusive RFQ selection on the purchase agreement type form
+- [ ] By selecting the non-exclusive RFQ selection on the purchase agreement form
+- [ ] By selection the non-exclusive RFQ selection on the purchase agreement type form
+
+### When should I use Blanket Orders?
+
+- [x] When making repetitive purchases from the same supplier within a certain time period
+- [ ] When making repetitive purchases for the same product to several suppliers within a certain time period.
+- [ ] When ordering many different products in several deliveries to the same vendor within a certain time period.
+
+
+### If I order 3 units of a product and receive 2, what will the "should be paid " field if I confirm a bill of 2 items?
+
+- [ ] No
+- [ ] Yes
+- [ ] Pending
+- [x] Exception
+
+###  Can a user manually change the value of the "Should be Paid" field?
+- [ ] No
+- [x] Yes
+
+### If I order 5 units of a product and receive 3 of them with a back order, what will the "should be paid" field say if I confirm a bill of 3 items?
+
+- [x] Yes
+- [ ] No
+- [ ] Pending
+- [ ] Exception
+
+## Sales
+
+### How can I create sections to structure my quotations?
+
+- [x] By adding them directly in the quotation
+- [ ] By adding them when you create the invoice
+- [ ] By adding them when you send the quotation to the customer
+- [ ] By setting it up in the sales app settings
+
+### Is it true that sales orders sent by email can be found in the chatter?
+
+- [ ] No
+- [x] Yes
+
+### Does sending the quotation by email convert it to a sale order?
+
+- [ ] Yes
+- [x] No
+- [ ] Yes, but only if the customer opens the mail
+
+### What kind of formulas can we do directly in the numerical fields of the quotation ?
+
+- [ ] Addition
+- [ ] Subtraction
+- [ ] Multiplication
+- [ ] Division
+- [ ] All of them
+
+###  Is it possible to set a different price for each variant?
+
+- [x] Yes
+- [ ] No
+
+### What are the different attribute types?
+
+- [ ] Radio, Selection, Color
+- [ ] Check, Radio, Selection
+- [ ] Radio, Select, Color
+- [ ] Check, Color, Boolean
+- [ ] Boolean, Selection, Color
+- [ ] Boolean, Radio, Select
+
+### If I have two attributes, one with 3 items, the other with 4, how many variants will my product have?
+
+- [ ] 3
+- [ ] 4
+- [ ] 7
+- [x] 12
+- [ ] 15
+- [ ] 17
+
+### Does online quotation allow upselling?
+
+- [ ] Yes
+- [x] No
+- [ ] Only in the test environment
+- [ ] Only in the production environment
+
+### Can I cross-sell on my online quotations?
+
+- [x] Yes
+- [ ] Only with the eCommerce app installed
+- [ ] Only in the production environment
+- [ ] No
+
+### What does the online quotation allow?
+
+- [ ] To sign online
+- [ ] To pay online
+- [x] Both
+- [ ] None of the above
+
+### What are the default delivery charges when I add shipping costs?
+
+- [x] 0
+- [ ] 5
+- [ ] 60
+- [ ] Odoo doesn't create a default shipping method including delivery charges
+
+### I want my customer to pay $20 if the weight of the order is over 5kg and $10 if not. What can I do?
+
+- [x] You can use a shipping method based on rules with two conditions.
+- [ ] You can use a shipping method based on rules with one condition.
+- [ ] You can create two different shipping methods, each set with its own price and weight.
+- [ ] Odoo does it automatically.
+
+### What's the impact of adding 2 days in customer lead time?
+ - [ ] The customer will have two extra days to validate his quotation
+ - [ ] Delivery orders will be scheduled 2 days before
+ - [x] Delivery orders will be scheduled 2 days later
+
+###  I have a customer lead time of 15 days. What will be the scheduled date for the delivery if the confirmation date is 01/23?
+
+- [x] 02/07
+- [ ] 02/08
+- [ ] 02/06
+- [ ] 01/08
+- [ ] 01/06
+- [ ] 01/07
+
+### Do I need to install the Purchase app to use the Dropshipping feature?
+
+- [ ] No
+- [x] Yes
+
+### When I confirm a quotation with a dropshipped product, what will be the status of the quotation?
+
+- [ ] Waiting Another Operation
+- [ ] Quotation
+- [x] Sales Order
+- [ ] Purchase Order
+
+### What will happen when I receive the product of the dropshipped product in the purchase order?
+
+- [x] The delivery will automatically be moved to "done".
+- [ ] You will have to deliver the product
+- [ ] You need to update your stock
+
+### Where can I activate this Dropshipping feature ?
+
+- [ ] In the settings of the Sales app configuration
+- [x] In the settings of the Purchase app configuration
+- [ ] In the general settings​
+- [ ] All of above
+- [ ] None of above
+
+### Can I show the discounts I give to my customers?
+
+- [x] Yes
+- [ ] No
+- [ ] Only if you use pricelists on all products
+- [ ] Only if you use pricelists on a category of products
+
+### How can I set up my pricelists so they will be used automatically in quotations?
+
+- [ ] By adding the pricelist to a contact
+- [x] You need to add a price for the pricelist on the product form and reference the pricelist on a contact form
+- [ ] You can't do that
+- [ ] By adding a price for them on a product form
+- [ ] By adding a price for them on the contact form
+
+### Can I decide to set a minimum quantity to apply a discount based on a pricelist ?
+
+- [x] Yes
+- [ ] No
+- [ ] Only with standard pricelists
+- [ ] Only when using a pricelist based on weight
+
+### How can I define a pricelist only for the US?
+
+- [ ] By adding US to the pricelist's limited countries.
+- [x] By adding US to the pricelist's country groups.
+
+## Accounting
+
+### What is the purpose of accounts in accounting?
+
+- [ ] To manage my Odoo account.
+- [ ] They are a type of report that can be generated at the end of the year.
+- [ ] A count is a nobleman who is subordinate to a duke.
+- [x] They allow us to classify every financial operation.
+
+### What do you call the action of linking two entries to show that they balance each other out?
+ - [ ] Balance
+ - [ ] Reconciliation
+ - [ ] Compensation
+ - [ ] Mapping
+
+###  "In accounting, nothing is lost, nothing is created, everything is transformed." How does the double-entry bookkeeping system work?
+ - [x] Every transaction affects at least two accounts, moving a value from one account to the other(s).
+ - [ ] Every transaction affects at least two journals, moving a value from one journal to the other(s).
+ - [ ] Every transaction must be reconciled to be valid.
+
+### Whenever a payment for a customer's invoice is registered on my bank account, the following entry will occur:
+
+- [x] The Bank Account is debited and the Account Receivable is credited.
+- [ ] Both the Bank Account and the Account Receivable are credited.
+- [ ] Both the Bank Account and the Account Receivable are debited.
+- [ ] The Bank Account is credited and the Account Receivable is debited.
+
+### How can I easily find the journal entry that has been automatically generated by a validated customer invoice?
+
+- [ ] By clicking on the "Journal Entry" smart button at the top of the invoice.
+- [ ] By going to the "Other Info" tab, then clicking on the Journal link and searching for the invoice number.
+- [x] By going to the "Other Info" tab, then clicking on the "Journal Entry" field.
+- [ ] By going to the list of invoices, selecting the invoices for which I want to see the journal items and by clicking on "Action" then "Journal Items".
+
+### Why is it important to reconcile just before following up on unpaid invoices?
+
+- [x] This way you are as up-to-date as can be with my customers' payments. Otherwise, you would be sending follow-up messages to customers who have already paid.
+- [ ] This way you know how your cash flow is doing and if it is more or less urgent that unpaid invoices get paid.
+- [ ] It doesn't matter: reconciliation does not affect the follow-ups.
+- [ ] This way you make sure that any email received from a customer regarding a payment they have just made has been read.
+
+### How can I set up my automatic follow-up messages?
+
+- [ ] By setting up your different letters, emails, and activities in Configuration -> Follow-up Levels, then selecting this Follow-up group in the contact's form view, under the Accounting tab.
+- [ ] By installing Odoo Follow-up with the Apps installer, then configuring the Follow-up Levels in the Settings.
+- [x] By first enabling the Follow-up Levels option in Configuration -> Settings -> Customer Payments then setting up your different letters, emails, and activities in Configuration -> Follow-up Levels.
+- [ ] By clicking on the Follow-up button on an invoice, then selecting the right set of emails. You can configure the emails by clicking on the external button next to the Email Template field.
+
+### What is reconciliation?
+
+- [ ] It is a specific kind of journal entry, in the Reconciliation Journal, which balances out unbalanced entries.
+- [ ] It is a specific kind of report required by governments to make sure that all taxes are paid on time.
+- [x] It is a process to link two different records, documenting that they balance each other out and are in agreement.
+- [ ] It is a journal entry to balance out the Account Receivable when a debtor hasn't paid their invoice in time.
+
+### In Odoo, what is the difference between the Bank Journal and Bank Statements?
+
+- [ ] The Bank Journal is a report generated by Odoo that you must reconcile with your Bank Statements to balance your accounts.
+- [x] The Bank Journal records financial transactions in Odoo, while the bank statements come from your bank. Reconciling the two helps you to make sure that your accounting is accurate.
+- [ ] They are the same thing.
+- [ ] The Bank Journal records financial transactions in Odoo, while the Bank Statement is a report that you can generate from your Bank Account in Odoo.
+
+### What is a write-off?
+
+- [ ] It is a specific kind of discount.
+- [ ] It is the action of reconciling all unreconciled entries.
+- [ ] It is the action of deleting an issued invoice (e.g. if you made a mistake)
+- [x] It is a journal entry that clears an amount off the books.
+
+### From the Accounting Overview page, which button should I click to pay all open Vendor Bills at once with a Batch Payment?
+
+- [ ] By clicking on "x Bills to Pay" in the "Vendor Bills" section.
+- [ ] By clicking on "x Checks to print" or "x Payments to send via SEPA" in the "Bank" section.
+- [ ] By clicking on "x Bills to pay" in the "Bank" section.
+- [x] It is not possible to directly pay open Vendor Bills. Their payments must be registered first.
+
+### What is required to be able to generate SEPA Credit Transfer files?
+
+- [x] To Have the IBAN and BIC correctly indicated for my Bank Account and the customers' bank account.
+- [ ] To have your Creditor Identifier correctly indicated in the Settings.
+- [ ] Nothing in particular
+- [ ] To generate a different file for each Vendor Bill.
+
+### Based on what we have just learned, what should I do once I have received multiple checks from my customers?
+
+- [x] Register the payments for the corresponding invoices, generate a batch deposit for the bank to process, then reconcile the bank statement with the batch deposit.
+- [ ] Record the sum of all checks as one payment, then reconcile with all the corresponding invoices so that you can match the bank statement easily.
+- [ ] Create a batch payment document where you write down the details of all the checks. Once you have received the bank statement, you can reconcile all the lines with the corresponding invoices.
+- [ ] Send all the checks back to your customers.
+
+### What should I do when I want to register a payment that I plan to group into a batch deposit?
+
+- [ ] Write CHK at the beginning of the Memo field.
+- [ ] Nothing.
+- [ ] Click on the "Register Check" button instead of the "Register Payment" button.
+- [x] Select "Batch Deposit" as Payment Method Type.
+
+### Odoo's default rounding method is to round per line. What does this mean?
+
+- [ ] On an invoice or a bill, taxes on each line are summed up, then the total is rounded.
+- [x] On an invoice or a bill, taxes are rounded line by line and then summed up.
+- [ ] There is no default rounding method since there is only one way to round.
+- [ ] It means that Odoo likes to make rounds, even with lines.
+
+### What happens if I import a bill that has been generated by another Odoo Database?
+
+- [ ] The file will be uploaded to the chatter.
+- [ ] The file will be uploaded to the chatter and Odoo will read an integrated .xml file that allows you to pay the bill online.
+- [ ] The two databases will connect, allowing you to contact your supplier easily.
+- [x] The file will be uploaded to the chatter, Odoo will read an integrated .xml file, and most fields will be filled automatically in the bill's form.
+
+### How can I add a main currency (such as JPY) with which I want to issue invoices?
+
+- [ ] It is not necessary since the 20 most traded currencies in the world are all selectable by default in your invoices.
+- [ ] By going to Configuration -> Currencies, and creating a new currency.
+- [x] By going to Configuration -> Currencies and activating the new currency in the existing list.
+- [ ] By going to Configuration -> Currencies, creating a new currency and selecting the related main currency in the Official Currency field.
+
+### Where can I see the exchange gain or loss of a paid invoice?
+
+- [ ] In Accounting -> Exchange Gain or Loss, by opening the entry that has the same name as your invoice.
+- [ ] In Accounting -> Journal Entries, in the related entry of the journal that you previously set as the Exchange Gain or Loss Journal.
+- [ ] In the invoice's form view, after the Paid field and before the Amount Due field.
+- [ ] In the invoice, under the Other Info tab, after the Tax Description field.
+
+### On a Balance Sheet, how to be sure the accounts are correctly balanced?
+
+- [x] With the formula: Assets = Liabilities + Equity.
+- [ ] With the formula: Equity = Liabilities - Assets
+- [ ] With the formula: Equity = Assets + Liabilities
+- [ ] With the formula: Assets = Liabilities - Equity
+
+### Which report allows to quickly see for how long my customers have been in my debt?
+
+- [ ] Cash Flow Statement
+- [x] Aged Receivable
+- [ ] Aged Payable
+- [ ] Partner Ledger
+
+### How can I partially link a financial transaction to one or multiple analytic accounts?
+
+- [ ] There is no use in having only a part of a value linked to an analytic account.
+- [ ] By modifying the posted entries and adding a percentage value next to the analytic account field.
+- [ ] When adding an analytic account to the financial transaction, by opening the external link and adding the required percentage value.
+- [x] By creating an analytic tag, selecting the "Analytic Distribution" option and adding the required analytic accounts and their percentages.
+
+### How can I have my working time automatically recorded as a value in an analytic account?
+
+- [x] With the Project and Timesheets apps installed, any new project will also create a new analytic account. Based on the recorded timesheets and the employee's costs, an amount will automatically be recorded in this analytic account.
+- [ ] At the creation of a task, the employee has to indicate for which analytic account his work is related.
+- [ ] Every time a timesheet is recorded, the employee has to indicate for which analytic account his work is related.
+- [ ] Timesheet reports must be generated manually in Project. These reports are automatically synced with Accounting.
+
+### What is the first step I should do when I start closing a fiscal year?
+
+- [ ] Generate all financial statements.
+- [ ] Allocate the year earnings.
+- [ ] Lock the accounting for all users that don't have an "Advisor" access right.
+- [ ] Watch a good movie.
+
+### Where can I check the amount of unallocated earnings once I've closed the fiscal year?
+
+- [ ] On the Profit and Loss Statement, set on "End of Last Financial Year"
+- [x] On the Balance Sheet, set on "End of Last Financial Year"
+- [ ] On the Balance Sheet, with the period set on "Last Financial Year"
+- [ ] On the Profit and Loss Statement, with the period set on "Last Financial Year"
+
+###  How does the "Standard Price" Costing Method work in Odoo?
+
+- [ ] Odoo computes the average cost based on the prices indicated on the Vendor Bills.
+- [x] The amount indicated as a cost in the Product Form is always used as the cost for stock valuation.
+- [ ] The price indicated on the Vendor Bill is used as the cost for stock valuation, in chronological order.
+- [ ] The price indicated on the Vendor Bill is used as the cost for stock valuation, and this implies that serial numbers must be used to track which item leaves the stock.
+
+### How can I configure a product to have its stock valued manually or automatically, and with which costing method?
+
+- [ ] By going to Accounting Settings -> Inventory Valuation and defining how Storable Products are valued.
+- [ ] By going to Inventory Settings -> Inventory Valuation and defining how Storable Products are valued.
+- [ ] By editing the Product Category on the product's form. The Product Category's settings define how the products are valued.
+- [ ] By going to the "Inventory" tab on the product's form and editing the "Inventory Valuation" section.
+
+### Why do we depreciate assets?
+
+- [x] To record expenses over the years rather than all at once.
+- [ ] To adapt the value of the assets before we resell them.
+- [ ] To analyse and better understand the costs of an asset.
+
+### What does the degressive depreciation method do?
+
+- [ ] It automatically calculates, based on a factor, the amount of months necessary to fully depreciate an asset.
+- [ ] Such a thing doesn't exist!
+- [x] It multiplies the last residual value of an asset by a chosen degressive factor.
+- [ ] It takes the initial residual value and divides it by the number of planned entries.
+
+###  What are deferred revenues?
+
+- [ ] They are payments made for services that last more than one fiscal year but that we want to record on one date rather than periodically.
+- [ ] They are payments that our customers promised to make in several instalments.
+- [x] They are payments made in advance by the customers for goods yet to be delivered or services yet to be rendered. We want to split the total amount into multiple entries recorded periodically.
+- [ ] They are assets that we want to take into account over a certain period of time.
+
+###  What does the "Prorata Temporis" option do?
+
+- [ ] This option doesn't exist at all.
+- [ ] This option exists but has nothing to do with deferred revenues.
+- [ ] The first entry has the same amount as all the following entries, regardless of the deferred revenue's starting date.
+- [x] The first entry is generated according to the deferred revenue's starting date, with an amount that is proportionate to what is left of the current financial year.
+
+## Human Resources
+###  My company is split into two departments: R&D and Sales. R&D is on the first floor and Sales is on the second. I don't want to use tags just for that information, so what else can I do?
+
+- [ ] Use work location
+- [ ] Use department location
+- [ ] Use office address
+- [ ] Use work address
+
+### Is the job title considered as a tag?
+
+- [ ] Yes
+- [x] No
+
+### Which of the following is a benefit of monitoring Attendances?
+
+- [ ] Being able to determine which employees arrive early.
+- [ ] Being able to identify who has the most absences without valid reason.
+- [ ] Helps know who is a suitable match for the company
+- [x] All of the other answers
+
+###  What type of information do I need in order to use the barcode feature for check-ins?
+
+- [ ] A PIN code
+- [x] A Badge (with an ID)
+- [ ] Both of the above answers
+- [ ] None of the above answers
+
+### By default, who's in charge of validating leave requests?
+
+- [ ] No Validation required
+- [ ] The Team Leader
+- [x] The Payroll Officer
+- [ ] The Team Leader and the Payroll Officer
+
+###  In the Time Off Analysis report, I want to see an overview counting the days of approved time off for each employee, sorted by month and type of leave. What combination of View, Filter and Group By options do I need to set up to get this view?
+
+- [x] Pivot View --> Approved Time Off --> Type > Employee
+- [ ] Graph View --> Approved Time Off --> Type > Employee
+- [ ] Calendar View --> Approved Time Off --> Type > Employee
+- [ ] Any of the above answers
+
+### Where can you get an overview of the people in time off for your company?
+- [ ] In the reporting tab
+- [ ] In the everyone tab
+- [x] Both of these answers
+
+### How many appraisals can an employee request per year?
+
+- [x] It depends on the minimum time between appraisals.
+- [ ] It depends on the Appraisal reminders timer.
+- [ ] As many he wishes.
+- [ ] One.
+
+###  Where can you modify the Appraisal invitation mail from?
+
+- [ ] From the settings page --> Default Appraisal Invitations.
+- [ ] When sending it.
+- [x] Both of the above answers.
+- [ ] You can’t change the default message.
+
+### Is it possible to add multiple colleagues to an appraisal?
+
+- [x] Yes, when sending the invitations.
+- [ ] No.
+- [ ] Yes, if you set it up in Settings --> Default Appraisal Invitations.
+
+### I'm the manager of a little team of three people. I have an appraisal with the three of them and my own appraisal with my manager. What will, then, be my count of appraisals in Odoo?
+
+- [ ] One
+- [ ] Three
+- [ ] Four
+- [ ] Odoo does not count the appraisals
+
+### Can I find an employee with a search based on their skills?
+
+-  [x] Yes
+-  [ ] No
+
+### I want to add a level (A1, A2, B1, etc.) to my employees' language skills, what feature can I use to do so?
+
+- [ ] Skill Type
+- [x] Skill Level
+- [ ] Skill Progress
+- [ ] Language Level
+- [ ] Level
+
+### Where can I add more info about my previous experiences?
+
+- [ ] In the type field
+- [ ] In the resume field
+- [ ] In the summary field
+- [x] In the description field​
+
+### What kind of feature do I need if I want to automatically display a form on my job offers?
+
+- [ ] Form Builder
+- [ ] Interview Builder
+- [x] Interview Form
+- [ ] Displayed Form
+- [ ] Form Offer
+
+### Is it possible to add attachments to an existing application?
+
+- [ ] Only at the first stage of the application
+- [ ] Yes, at any time
+- [ ] No, you can’t change the original application
+
+### Where can you change the validity period of the Salary Package Configurator?
+
+- [ ] When generating an “Offer Link”
+- [x] In the settings ---> Salary Package configurator
+- [ ] Both of these answers
+
+### Can you share a Job position on all social media platforms at once?
+
+- [ ] Yes with share now button
+- [ ] Yes with the share all button
+- [x] No
+
+### How can you notify people for a new job position?
+
+- [ ] You can’t
+- [ ] By going to “View Jobs”
+- [x] By creating an alert popping up on the dashboard
+
+### Where can you choose the amount of points for each stage of the recruitment process?
+
+- [ ] In the referral app ----> Configuration---->job positions by editing the stages
+- [x] In the Recruitment App------>Applications---->All Applications by editing the stages
+- [ ] You can’t change the number of points given
+
+### What's the difference between a standard product and an expense?
+
+- [ ] The expense has its own product type
+- [ ] The expense can't be sold or purchased when created
+- [x] The expense is set as "can be expensed"
+- [ ] The expense is set as a "landed cost"
+
+### How can I choose my expense product when recording my expenses by email?
+
+- [ ] By using the internal reference as a prefix in the email's subject line.
+- [ ] Odoo automatically recognizes the expense product with the attached document(s)
+- [ ] Odoo does not allow to record expenses by email
+- [ ] By selecting an expense account on the expense form
+
+### Is it possible to generate payslips without resolving conflicts first?
+
+- [ ] Yes, always.
+- [ ] Yes, by enabling “always generate payslips” in the configuration.
+- [x] No, you must always resolve conflicts first.
+
+### What does a payslip contain?
+
+- [ ] The number of days and hours worked.
+- [ ] The salary computation and the net salary.
+- [ ] The accounting information.
+- [x] All of these answers.
