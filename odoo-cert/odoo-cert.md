@@ -91,8 +91,8 @@
 
 ### 3. I have 40 units of "Chair" in stock, with a product cost $50 per unit, 20 units belonging to myself and 20 units belonging to Azure Interior (owner), what is my inventory value for the chairs?
 
-- [ ] 1000$
-- [x] 2000$
+- [x] 1000$
+- [ ] 2000$
 - [ ] 1500$
 - [ ] Idk
 
@@ -146,8 +146,8 @@
 
 ### 2. How would you allocate one leave per day (PTO) per month work?
 
-- [x] Create a new leave type with allocation mode "Fixed by HR"
-- [ ] Create a new allocation and configuring its "accrual" option
+- [ ] Create a new leave type with allocation mode "Fixed by HR"
+- [x] Create a new allocation and configuring its "accrual" option
 - [ ] Configuring a work schedule on the employee
 - [ ] It's not possible to do that
 - [ ] Idk
@@ -240,7 +240,7 @@
 ### 1. What does this product configuration imply?
 
 ![](SalesV12-Q15(1).jpg)
-![](SalesV12-Q8.jpg)
+![](SalesV12-Q15(2).jpg)
 
 - [ ] The product will be ordered from a vendor everytime a sales or manufacturing order is validated
 - [x] If a re-ordering rule is set up, the product will be ordered from a vendor when the rule is triggered
@@ -258,6 +258,9 @@
 
 - [ ] Yes
 
+### 4. What is the effect of this pricelist item?
+
+![](SalesV12-Q8.jpg)
 
 # Quiz
 
@@ -1003,3 +1006,133 @@ Up to 10
 - [ ] The salary computation and the net salary.
 - [ ] The accounting information.
 - [x] All of these answers.
+
+
+## Invoicing
+
+### How can I add my company's details (such as the address and VAT number) to my invoices?
+
+- [ ] By adding your VAT number to the document's template.
+- [ ] By adding your company's details to the document's template.
+- [x] By adding them to your company's data in the main settings.
+- [ ] By requesting Obi-Wan Kenobi's help.
+
+### How can I cancel or modify a validated invoice?
+
+- [ ] By clicking on "edit" in the invoice's form view.
+- [ ] By clicking on "cancel invoice" in the invoice's form view.
+- [ ] By duplicating the invoice and deleting the original one.
+- [x] You can't alter a validated invoice, but you can add a credit note, in the invoice's form view.
+
+### What do Payment Terms cover?
+
+- [ ] The due date.
+- [x] The due date, the payment conditions, and any incentive.
+- [ ] All the rules and guidelines that customers must agree to.
+- [ ] The due date and the taxes applied on the invoice.
+
+### How can I add my General Terms and Conditions to my invoice?
+
+- [ ] By adding an email address to which customers can send a request for the pdf file in Settings -> Invoicing -> Business Documents -> Document Template.
+- [x] By creating a page on your website (e.g. www.odoo.com/legal) and adding the link to your documents' footer in Configuration -> Settings -> General Settings -> Document Template.
+- [ ] By adding additional pages to your invoice in your documents' template under Configuration -> Settings -> General Settings -> Document Template.
+- [ ] By adding additional pages to your invoice in your documents' template under Settings -> Invoicing -> Business Documents -> Document Template.
+
+### What is the use of a QR code on an invoice?
+
+- [ ] It is a great promotional tool to add a link to a website for example.
+- [ ] It contains the company's contact information.
+- [ ] It is used by Odoo to easily encode external bills as Vendor Bills in the Accounting app.
+- [x] It allows the customers to scan their Wire Transfer instructions directly with their banking app.
+
+### How can I display a QR Code on an eCommerce Website or on an invoice in the customer's portal?
+
+- [ ] By enabling "SEPA QR Code" in Configuration -> Settings -> Customer Payments.
+- [ ] By adding a "SEPA QR Code" block to the Web Page Edition view.
+- [x] By enabling "Use SEPA QR Code" in a Payment Acquirer's form view, under the Configuration tab.
+- [ ] By activating the "SEPA QR Code" Payment Acquirer.
+
+### What is required in order to make SEPA Direct Debit Payments?
+
+- [ ] A valid Creditor Identifier and the right bank account synchronized with Odoo.
+- [x] A valid Creditor Identifier and valid mandates signed by the debtors.
+- [ ] Any record (such as an email) from the debtors proving that they authorize us to collect money from their accounts.
+- [ ] Valid mandates signed by the debtors and the right bank account synchronized with Odoo.
+
+### On a mandate's Form View, what does the buttons "close" and "revoke" do?
+
+- [ ] "Close" indicates to Odoo that you have uploaded the generated XML file to your bank account interface, and "Revoke" allows you to refund payments made with SDD.
+- [ ] "Close" closes the form view and "Revoke" invalidates the mandate for all open invoices, no matter when they have been issued.
+- [x] "Close" ends the validity of the mandate on the present day and "Revoke" invalidates the mandate for all open invoices, no matter when they have been issued.
+- [ ] "Close" ends the validity of the mandate on the present day and "Revoke" allows you to refund payments made with SDD.
+
+### How does the value-added tax, or "VAT" work?
+
+- [x] This tax is based on the increase in value of a product or service at each stage of production or distribution.​
+- [ ] This tax is applied every time something is sold retail to its final customer. ​
+- [ ] Such a tax doesn't exist.
+
+### What is the right way to change the default sales tax that Odoo will apply?
+
+- [ ] By modifying the current default sales tax in Configuration -> Taxes.
+- [ ] By editing the tax in view mode and checking "Default Sales Tax".
+- [ ] By moving the tax to the top of the list in Configuration -> Taxes.
+- [x] By selecting the right tax as the default sales tax in Settings -> Invoicing (or Accounting) -> Taxes.
+
+### How can I automatically apply the right taxes to my B2B customers in a specific country?
+
+- [ ] By editing the country under Configuration / Countries, and selecting the right fiscal position in the "companies" section.
+- [ ] Forty-two.
+- [ ] By editing the fiscal position under Configuration / Fiscal Positions, and by selecting "companies" in the "type" field and selecting the country.
+- [x] By editing the fiscal position under Configuration / Fiscal Positions, checking the "detect automatically" and "VAT required", and selecting the country.
+
+### How can I define a Fiscal Position for a specific customer?
+
+- [ ] By going to Configuration / Fiscal Positions, checking the "Specific Customers" box and adding the customer in the following field.
+- [ ] By going to Configuration / Fiscal Positions, under the "Specific Customers" tab, and adding the customer to the list.
+- [x] In the Customer's Form View, under the "Sales & Purchase" tab, at the "Fiscal Information" section, by editing the "Fiscal Position" field.
+- [ ] It is not possible to apply a fiscal position to a specific customer.
+
+### What does the "Affect Base of Subsequent Taxes" option do when activated on a tax?
+
+- [x] The current tax will be added to the base on which the next tax (listed after the current one in the taxes' list) will be applied.
+- [ ] The next tax (listed after the current one in the taxes' list) will be added to the base on which the current tax will be applied.
+- [ ] The amount of the tax will be included in the price.
+- [ ] It will summon an army of minions.
+
+### Why is the order of the taxes' list crucial?
+
+- [ ] It defines the order in which the different taxes are displayed on the invoices, between the subtotal and the total.
+- [x] It defines in which order the taxes are computed.
+- [ ] It is not crucial; it only allows us to keep our list well organized.
+- [ ] Because taxes that affect the base of subsequent taxes and that are mapped in Fiscal Positions need to be next to each other for them to be correctly applied when you create a new invoice for a customer based abroad or taxed differently.
+
+## Project & Timesheets
+
+### Which fields are mandatory to be filled when creating a new timesheet?
+
+- [x] Project and Date
+- [ ] Task and Date.
+- [ ] Employee and Project.
+- [ ] Date and Employee.
+
+### How can reports be organized?
+
+- [ ] By Project.
+- [ ] By Employee.
+- [ ] By Hours spent.
+- [x] By Employee, Project, Task or Billing rate.
+
+### I sold and invoiced 10 hours of work for 150$ per hour. The employee costs 50$ / hour. What is the project profitability if 10 hours have been worked on the project?
+
+- [x] 1000$
+- [ ] 500$
+- [ ] 2000$
+- [ ] 1500$
+
+### What can I create from my Project Overview?
+
+- [ ] A Sale Order only
+- [ ] An Invoice only
+- [x] A sale order, or an invoice depending on the status
+
