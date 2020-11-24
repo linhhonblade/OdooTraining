@@ -29,3 +29,36 @@
 - User metadata capturing, such as IP address and a user device, while generating a lead from the website through the Contact Us page.
 
 ![](9_.png)
+
+## Document Management
+
+## IoT
+
+## Odoo Studio
+
+## Discuss and Chat
+
+## Calendar and Activities
+
+## Inventory
+
+## Project Management
+
+- Cohort and Dashboard for every project:
+
+![](16_.jpg)
+![](17_.jpg)
+
+- Customers can pay with their mobile banking app using SEPA QR codes:
+
+![](18_.jpg)
+![](19_.png)
+
+## Subscription
+
+## Sales
+
+- Ability to add notes in sales order lines:
+
+![](22.png)
+

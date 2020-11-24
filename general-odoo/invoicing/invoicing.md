@@ -46,3 +46,21 @@
 - Specific country to apply fiscal position: the country field below country group
 - add customer first in the invoice so that fiscal positon display properly (add product first, then fiscal position not display)
 
+# Notes
+
+- If you decide to choose the Invoice what is delivered rule, you will not be able to activate the feature called Automatic invoice, which automatically generates invoices when the online payment is confirmed.
+- When you request your first down payment, a new product called Down payment will be created. This product will be registered as a service product with an invoicing policy of ordered quantities. As a reminder, you can edit this product and modify it at any time. Please note that if you choose delivered quantities as invoicing policy, you will not be able to create an invoice.
+- Be careful that if you do a down payment with a product using delivered quantities as invoicing policy, you won’t be able to deduct all the down payments when it comes to invoicing your customer. Indeed, you have to deliver a product before creating the final invoice. If nothing has been delivered, you create a credit note that cancels the draft invoice created after the down payment. To do so, you have to install the Inventory App to confirm the delivery. Otherwise, you can enter the delivered quantity manually on the sales order.
+
+Note
+
+- A single sale price per product : doesn’t let you adapt prices, it use default product price ;
+- Different prices per customer segment : you will set several prices per products ;
+- Advanced pricing based on formula : will let you apply discounts, margins and roundings.
+- Make sure you have default prices set in the pricelist outside of the deals period. Otherwise you might have issues once the period over.
+- Make sure you have default prices set in the pricelist outside of the deals period. Otherwise you might have issues once the period over.
+
+Note
+
+- Once again the system is smart. If a rule is set for a particular item and another one for its category Odoo will take the rule of the item.
+- Make sure at least one pricelist item covers all your products.

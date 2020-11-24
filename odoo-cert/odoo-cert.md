@@ -528,7 +528,7 @@ Up to 10
 - [ ] By going to Configuration -> Currencies, creating a new currency and selecting the related main currency in the Official Currency field.
 ### Where can I see the exchange gain or loss of a paid invoice?
 - [ ] In Accounting -> Exchange Gain or Loss, by opening the entry that has the same name as your invoice.
-- [ ] In Accounting -> Journal Entries, in the related entry of the journal that you previously set as the Exchange Gain or Loss Journal.
+- [x] In Accounting -> Journal Entries, in the related entry of the journal that you previously set as the Exchange Gain or Loss Journal.
 - [ ] In the invoice's form view, after the Paid field and before the Amount Due field.
 - [ ] In the invoice, under the Other Info tab, after the Tax Description field.
 ### On a Balance Sheet, how to be sure the accounts are correctly balanced?
@@ -554,7 +554,7 @@ Up to 10
 ### What is the first step I should do when I start closing a fiscal year?
 - [ ] Generate all financial statements.
 - [ ] Allocate the year earnings.
-- [ ] Lock the accounting for all users that don't have an "Advisor" access right.
+- [x] Lock the accounting for all users that don't have an "Advisor" access right.
 - [ ] Watch a good movie.
 ### Where can I check the amount of unallocated earnings once I've closed the fiscal year?
 - [ ] On the Profit and Loss Statement, set on "End of Last Financial Year"
@@ -569,7 +569,7 @@ Up to 10
 ### How can I configure a product to have its stock valued manually or automatically, and with which costing method?
 - [ ] By going to Accounting Settings -> Inventory Valuation and defining how Storable Products are valued.
 - [ ] By going to Inventory Settings -> Inventory Valuation and defining how Storable Products are valued.
-- [ ] By editing the Product Category on the product's form. The Product Category's settings define how the products are valued.
+- [x] By editing the Product Category on the product's form. The Product Category's settings define how the products are valued.
 - [ ] By going to the "Inventory" tab on the product's form and editing the "Inventory Valuation" section.
 ### Why do we depreciate assets?
 - [x] To record expenses over the years rather than all at once.
@@ -592,7 +592,7 @@ Up to 10
 - [x] The first entry is generated according to the deferred revenue's starting date, with an amount that is proportionate to what is left of the current financial year.
 ## Human Resources
 ###  My company is split into two departments: R&D and Sales. R&D is on the first floor and Sales is on the second. I don't want to use tags just for that information, so what else can I do?
-- [ ] Use work location
+- [x] Use work location
 - [ ] Use department location
 - [ ] Use office address
 - [ ] Use work address
@@ -638,7 +638,7 @@ Up to 10
 - [ ] No.
 - [ ] Yes, if you set it up in Settings --> Default Appraisal Invitations.
 ### I'm the manager of a little team of three people. I have an appraisal with the three of them and my own appraisal with my manager. What will, then, be my count of appraisals in Odoo?
-- [ ] One
+- [x] One
 - [ ] Three
 - [ ] Four
 - [ ] Odoo does not count the appraisals
@@ -664,7 +664,7 @@ Up to 10
 - [ ] Form Offer
 ### Is it possible to add attachments to an existing application?
 - [ ] Only at the first stage of the application
-- [ ] Yes, at any time
+  - [x] Yes, at any time
 - [ ] No, you can’t change the original application
 ### Where can you change the validity period of the Salary Package Configurator?
 - [ ] When generating an “Offer Link”
@@ -688,7 +688,7 @@ Up to 10
 - [x] The expense is set as "can be expensed"
 - [ ] The expense is set as a "landed cost"
 ### How can I choose my expense product when recording my expenses by email?
-- [ ] By using the internal reference as a prefix in the email's subject line.
+- [x] By using the internal reference as a prefix in the email's subject line.
 - [ ] Odoo automatically recognizes the expense product with the attached document(s)
 - [ ] Odoo does not allow to record expenses by email
 - [ ] By selecting an expense account on the expense form
@@ -805,7 +805,7 @@ Up to 10
 ### What is the destination of products I remove from my stock by manually adjusting my inventory?
 - [ ] WH/Stock/Inventory Adjustments
 - [ ] WH/Stock/Virtual Locations
-- [ ] Virtual Locations/Inventory Adjustments
+- [x] Virtual Locations/Inventory Adjustments
 - [ ] Virtual Locations/WH/Stock
 ### What will be the route of a manually updated product if my warehouse name is WH?
 - [ ] WH/Stock -> Virtual Location/Inventory Adjustment
@@ -820,7 +820,7 @@ Up to 10
 ### I set up a unit of measure smaller than the reference one, with a ration of 20. If I buy 50, what will the initial demand provided by Odoo be after the conversion?
 - [ ] 0.4
 - [ ] 25
-- [ ] 2.5
+- [x] 2.5
 - [ ] 50
 ### If I sell a product for 50€, what will be my profit with a cost of 20€ and a landed cost of 10€?
 - [ ] 40€
@@ -871,7 +871,7 @@ Up to 10
 - [ ] When you create a quotation
 - [ ] When you deliver the products
 ### I want to deliver the first product that entered my stock instead of a random one on my next sale order. How can I do this?
-- [ x By selecting FIFO as your Removal Strategy
+- [x] By selecting FIFO as your Removal Strategy
 - [ ] By selecting LIFO as your Removal Strategy
 - [ ] By selecting LIFO as your Put Away Strategy
 - [ ] By selecting FIFO as your Put Away Strategy
@@ -891,4 +891,46 @@ Up to 10
 - [ ] Five, because we have five products and wave picking dispatches each product to have only one per pick.
 - [ ] None of the above.
 
-## Subscription
+## Odoo Studio
+
+### What is a boolean data type?
+- [ ] Boolean is a type of dance, not a data type!
+- [ ] A type of field especially useful to insert mathematical formulas.
+- [ ] A type of field that allows you to add multiple values and select only one as the answer.
+- [x] A type of data whose value can either be "true" or "false". It is useful for questions whose answers can be "yes" or "no".
+### What is the use of the "conditional" option, next to some properties such as "Invisible"?
+- [ ] It allows us to see invisible fields while in Studio Mode
+- [x] With it, you can add filters whose matching records will allow the property to be applied.
+- [ ] It enables a set of other properties that are linked to that main property.
+- [ ] Conditionals are a type of field that requires more advanced settings.
+### What is a "many2one" field?
+- [ ] It is a relational field that allows us to connect multiple values for several fields (such as tags).
+- [ ] Such a thing doesn't exist.
+- [x] It is a relational field that allows us to choose one entry among many others.
+- [ ] It is a relational field that allows us to select multiple entries under one field.
+### How can I design my app to select a contact and have their phone number displayed automatically?
+- [ ] By adding a "Contact and Details" field.
+- [x] By adding a "many2one" field to select the contact as a relation, then adding a "Related Field" field set to "Contact > Phone", with its properties set to "Read Only" and changing the widget to "phone".
+- [ ] By adding a "one 2many" field to select the contact as a relation, then adding a "Related Field" field set to "Customer > Phone", with its properties set to "Read Only" and changing the widget to "phone".
+- [ ] By adding a "Related Field" field to select the contact as a relation, then another "Related Field" field to display the phone number.
+### What should I do when I want to add a new kind of entry to my app?
+- [ ] Add a new Default Model Filter to have a new view for the new kind of entry.
+- [ ] Add a new Category in the View panel.
+- [x] Create a new Model that will store all the new entries.
+- [ ] Create a new Database that will store all the new entries.
+### What is a Smart Button?
+- [ ] It is a button that triggers a set of actions.
+- [ ] It is a button to activate third-party plug-ins.
+- [x] It is a button at the top of a Form View that displays important information related to the current entry.
+- [ ] It is a dumb button that does nothing.
+### How can I make sure that some parts of my report only appears if I have a customer selected in my form?
+- [ ] By clicking on the field, then checking the "Invisible" box and adding a conditional filter with the following rule: doc( [Name of the Model] ) > Customer is set
+- [ ] By clicking on the field, then going to the "Visible if" setting and adding a domain filter with the following rule: doc( [Name of the Model] ) > Customer is not set
+- [ ] By clicking on the field, then checking the "Invisible" box and adding a conditional filter with the following rule: doc( [Name of the Model] ) > Customer is not set
+- [ ] By clicking on the field, then going to the "Visible if" setting and adding a domain filter with the following rule: doc( [Name of the Model] ) > Customer is set
+### What is the difference between a "Block / Text" field and an "Inline / Text" field?
+- [ ] You can draw a rectangle area with the "Block / Text" field, and the "Inline / Text" field will adjust the width and height automatically.
+- [ ] You can write whatever you want in the "Block / Text" field, and you can select a related field with the "Inline / Text" field.
+- [ ] The two different "Text" fields are "Text" and "Multiline Text", rather than "Block / Text" and "Inline / Text".
+- [ ] You can add an "Inline / Text" at the end of another block. This allows you to create a continuity with two different kind of fields.
+- [ ]
