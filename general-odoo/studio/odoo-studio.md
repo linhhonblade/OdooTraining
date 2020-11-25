@@ -1,0 +1,24 @@
+# Studio: Advanced Tips & Trick
+
+- On opportunities, **add a field** that shows the pricelist of the related customers
+- **Create a graph** of opportunites: expected revenues, grouped by customer language
+- On opportunities, **if the country is France** show a filed "Pay by check"?
+- Create a **new group** of users: "Franc customer Only ", these users **can only access** from France
+- **Create an object** "Properties" **with fields**: company, value, name, address, active, image. Show the value **in the currency of the company**
+- Create an object "Property Tags". A property can have **multiple** tag and a tag multiple properties
+- On Tags,  add a **button that opens** all relatedd  properties
+- **Create two menus** "Properties for sale (=properties that contraints the tag "forsale", and Propertieies not for sale)
+- On properties, show **all the tags and checkboxes** instead of tags
+- **When I create** a lead in Belgium, **set** the priority to 3 starts **automatically**
+- Change the menu "Customers" in sales to **filter on belgian customer by default** (but the user should be able to unset the filter to see them all)
+- On leads, add a selection field with values: "as tag" & "as list" & "as radio". **According to the value of this field** show tags as manay2many_tags, manay2many_radio, or many2many_list
+- If an opportunity in France is still open 3 days after it's creation, **send an email** to XYZ@example.com
+- On sales orders, **show the lines as kanban cards** like in the mobile view (instead of list view)
+- On a quotation, **if** the untaxed amount is **bigger than** 500EUR, **only a sales manager** can validate the quotation
+- If the amount is lower than 500EUR, any user can validate the quote
+- **Add a stage field** to manage product's life cycle: prototype, in used, deprecated. On a product form, put a **kanban view by stages** and show the status bar in the form view
+- **When** a product goes from "in used" to "deprecated", **set its cost to 0EUR** (But not if it goes from prototype to deprecated)
+- In the list of leads, allow to **edit inline** in the list, without having to switch to the form view.
+- Search the city Paris in leads. Then, create a new lead. Make Paris (the string you searched) **proposed by default** in the city field
+- **Change the tooltip** of a field (for all views, not for one only)
+- Make a field **became translatable** and have different values according to the user language

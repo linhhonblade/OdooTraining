@@ -890,7 +890,6 @@ Up to 10
 - [x] Two, because we have two different routes, one per product category.
 - [ ] Five, because we have five products and wave picking dispatches each product to have only one per pick.
 - [ ] None of the above.
-
 ## Odoo Studio
 
 ### What is a boolean data type?
@@ -932,5 +931,34 @@ Up to 10
 - [ ] You can draw a rectangle area with the "Block / Text" field, and the "Inline / Text" field will adjust the width and height automatically.
 - [ ] You can write whatever you want in the "Block / Text" field, and you can select a related field with the "Inline / Text" field.
 - [ ] The two different "Text" fields are "Text" and "Multiline Text", rather than "Block / Text" and "Inline / Text".
-- [ ] You can add an "Inline / Text" at the end of another block. This allows you to create a continuity with two different kind of fields.
-- [ ]
+- [x] You can add an "Inline / Text" at the end of another block. This allows you to create a continuity with two different kind of fields.
+## Subscription
+
+### What is the difference between Logo Churn and Revenue Churn?
+- [ ] The Logo Churn doesn't exist. The Revenue Churn indicates the revenue loss rate.
+- [ ] The Logo Churn is the Monthly Recurring Revenue loss rate, and the Revenue Churn is the subscription cancellation rate.
+- [ ] They are two distinct metrics with different formulas that happen to have the same result.
+- [x] The Logo Churn is the subscription cancellation rate, and the Revenue Churn is the Monthly Recurring Revenue loss rate.
+### Of the following reports, which one indicates how much revenue can be expected for a customer during the whole time of their contract?
+- [ ] Retention
+- [x] Lifetime Value
+- [ ] Revenue Churn
+- [ ] MRR
+### What are subscription alerts?
+- [ ] They are messages that appear automatically on the customers' subscription portals.
+- [x] They are your automatic actions such, as adding tasks or sending emails that are triggered by a set of rules related to subscriptions.
+- [ ] It is a support service you can reach if there is an issue with your subscription.
+### I want my alert to be triggered one month after the beginning of the subscription. Which settings should I apply?
+- [ ] Trigger on: Modification | Trigger Date: Start Date | Delay after trigger date: 1 month
+- [ ] Trigger on: Modification | Trigger Date: Created on | Delay after trigger date: 1 month
+- [x] Trigger on: Timed Condition | Trigger Date: Start Date | Delay after trigger date: 1 month
+
+## eCommerce
+### Do the URLs automatically change for eCommerce ?
+- [x] Yes
+- [ ] No
+### What feature should I enable to have a menu allowing my customers to filter the products on attributes?
+- [ ] The eCommerce Categories
+- [ ] The sort by feature
+- [ ] The List view
+- [x] The product attribute's filters
