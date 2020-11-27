@@ -962,3 +962,92 @@ Up to 10
 - [ ] The sort by feature
 - [ ] The List view
 - [x] The product attribute's filters
+
+## Website
+### Where can I change my website theme if I already have one?
+- [ ] Under Customize Theme.
+- [x] In the Settings of the website app.
+- [ ] In the Edit menu of the website.
+- [ ] In the theme's properties (on the front-end of the website).
+### Can I use videos in Odoo's blocks?
+- [x] Yes
+- [ ] No
+### From where can I manage my website's menu?
+- [ ] From the backend
+- [ ] From the frontend
+- [x] From both frontend and backend (in debug mode)
+### What kind of content can I create from the front-end?
+- [ ] Pages
+- [ ] Products
+- [ ] Events
+- [ ] Blogs
+- [x] All the other answers, and even more
+### When creating a blog post, can I use customization blocks?
+- [ ] No
+- [x] Yes
+### Is the subscribe button automatically added to the blog page?
+- [ ] Yes
+- [ ] No
+- [x] Only with some themes.
+### What can I set as my website favicon?
+- [x] Any image you like
+- [ ] Only your company logo
+- [ ] Only an image found in the website library
+- [ ] Something in a 64*64 resolution, in jpeg format
+### Does Odoo use multi-language?
+- [ ] No
+- [ ] Yes
+- [x] Not yet
+
+### Will I need to create a homepage for my second website?
+- [ ] Yes
+- [ ] No, Odoo will generate a new page automatically
+### Will the content from each website be on the other one(s)?
+- [ ] Yes
+- [x] Not automatically
+- [ ] No, you cannot do that
+### What do you need on each of your pages to get a good ranking?
+- [ ] More than one H1
+- [ ] At least three H2
+- [ ] Metadata
+### Are images useful for SEO?
+- [x] Yes
+- [ ] No
+### Why should you use the Promote feature?
+- [ ] To allow your website to be shared on social media.
+- [x] To make sure that the search engines know which words are relevant, by indicating where those words are in your content.
+- [ ] To send new requests to Google in order for you to get a better rank.
+- [ ] To suggest modifications of your texts in order to have a better readability level.
+### Can the Form Builder be used to gather feedback?
+- [x] Yes
+- [ ] No
+### How many fields can I add to my Form Builder?
+- [ ] 10
+- [ ] 4
+- [x] As many as you want
+- [ ] Depends on the theme you chose for your website
+### Can I create a thanks page that will open when someone send the form?
+- [x] Yes
+- [ ] No
+### How do I know if my words have been translated?
+- [x] Thanks to the color codes (Green, Yellow) used to highlight the words.
+- [ ] By going into "translated words' on the website's front-end.
+- [ ] Odoo doesn't do automatic translations.
+### Can I activate the multi-website option from the backend?
+- [x] Yes
+- [ ] No
+- [ ] Only if you use the Graphene theme
+### What will be the color of a translated word?
+- [ ] Red
+- [ ] Yellow
+- [x] Green
+###  Can I shorten this URL: test.odoo.com/blog/our-blog-1/post/this-is-just-a-test-1 and then send it by email?
+- [ ] Yes, you can shorten it to test.odoo.com/blog/post/1
+- [x] Yes, you can shorten it to test.odoo.com/blog/1/post/1
+- [ ] Yes, you can shorten it to test.odoo.com/blog/our-blog-1/1
+- [ ] No, you can't
+### How can I access the spanish version of this website (let's imagine the URL exists): test.odoo.com/our-products/refunds
+- [ ] You can't
+- [ ] By adding es_es like this : test.odoo.com/our-products/es_es/refunds
+- [ ] By adding es_es like this : test.odoo.com/our-products/refunds/es_es.
+- [x] By adding es_es like this: test.odoo.com/es_es/our-products/refunds.

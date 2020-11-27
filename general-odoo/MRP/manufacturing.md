@@ -138,6 +138,8 @@
 
 ### Master Production Schedule
 
+- schedule based on lead time and replenishment strategies
+
 - Demand Forecast: your estimation for the period
 - Actual Demand: The confirmed sales
 - can manually edit the To replenish quantity
