@@ -44,4 +44,16 @@
 - Report in Employees (13+)
 - Reimburse Expenses in Payslip (13+)
 - Attach documents to expenses (12+)
--
+- Easy to resolve config in work entries (13+)
+- Directly generate Payslip from work entry (13+)
+- Generate payslip by batch (13+)
+- Generate the accounting entries from batch salaries.(13+)
+- New Referral App (13+)
+
+# Purchase
+- Add sections and notes to purchase orders. (13+)
+- Variant Grid Entry in Sale and Purchase setting (13+)
+
+# Website
+- Google font (13+)
+- attachments are now available on the portal.(13+)
