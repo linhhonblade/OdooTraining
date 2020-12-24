@@ -3,7 +3,7 @@
 | Features                                                  | EE                               | CE            |
 | --------------------------------------------------------- | -------------------------------- | ------------- |
 | functional support, version upgrades + bug fixes, hosting | [x]                              |               |
-| incoming/outgoing mail server                             | manual setup                     | [x]           |
+| incoming/outgoing mail server                             | [x]                              | manual setup  |
 | UI, Views                                                 | better                           |               |
 | Gantt, Cohort views                                       | [x]                              |               |
 | Number of users                                           | no matter if u use their hosting | config server |
