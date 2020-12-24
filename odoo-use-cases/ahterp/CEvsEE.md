@@ -2,22 +2,22 @@
 
 | Features                                                  | EE                               | CE            |
 | --------------------------------------------------------- | -------------------------------- | ------------- |
-| functional support, version upgrades + bug fixes, hosting | [x]                              | []            |
+| functional support, version upgrades + bug fixes, hosting | [x]                              |               |
 | incoming/outgoing mail server                             | manual setup                     | [x]           |
 | UI, Views                                                 | better                           |               |
-| Gantt, Cohort views                                       | [x]                              | []            |
+| Gantt, Cohort views                                       | [x]                              |               |
 | Number of users                                           | no matter if u use their hosting | config server |
 # CRM
 
 | Features                      | EE                                             | CE                                             |
 | ----------------------------- | ---------------------------------------------- | ---------------------------------------------- |
-| VoIP                          | [x]                                            | []                                             |
+| VoIP                          | [x]                                            |                                                |
 | Planning Activities           | [x]                                            | [x]                                            |
 | Manage lost opportunities     | [x]                                            | [x]                                            |
 | Sales Teams                   | [x]                                            | [x]                                            |
 | Convert leads to opp          | [x]                                            | [x]                                            |
 | Track your prospect visist    | [x]                                            | web required (havent check)                    |
-| Assign leads based on scoring | [x]                                            | []                                             |
+| Assign leads based on scoring | [x]                                            |                                                |
 | Check win/loss ratio          | [x]                                            | [x]                                            |
 | Enrich contact                | buy credits                                    | buy credits                                    |
 | Outlook extension             | buy credits if not: only website link and logo | buy credits if not: only website link and logo |
@@ -46,7 +46,7 @@
 | Invoice based on time and materials              | [x]                                            | [x]                                            |
 | Invoice project milestones                       | [x]                                            | [x]                                            |
 | Re-invoice expenses to customers                 | [x]                                            | [x]                                            |
-| Sell subscriptions                               | [x]                                            | []                                             |
+| Sell subscriptions                               | [x]                                            |                                                |
 
 ## Products & Prices
 
@@ -59,8 +59,8 @@
 | Manage prices for B2B (tax excluded) and B2C (tax included) | [x] | [x] |
 | Adapt your prices to your customers and apply discounts     | [x] | [x] |
 | Sell in foreign currencies                                  | [x] | [x] |
-| Amazon Connector                                            | [x] | []  |
-| eBay Connector                                              | [x] | []  |
+| Amazon Connector                                            | [x] |     |
+| eBay Connector                                              | [x] |     |
 | ive portal access rights to my customers                    | [x] | [x] |
 
 
