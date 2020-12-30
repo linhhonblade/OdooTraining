@@ -64,24 +64,24 @@
 | ive portal access rights to my customers                    | [x] | [x] |
 
 
-Còn lại (trừ Payroll, các chức năng đều có)
+# Còn lại (trừ Payroll, các chức năng đều có)
 
-# Invoicing
+## Invoicing
 
-# HR
+## HR
 
-## Employees
+### Employees
 
-## Recruitments
+### Recruitments
 
-## Timesheets
+### Timesheets
 
-## Timeoff
+### Timeoff
 
-## Expense
+### Expense
 
-## Contracts
+### Contracts
 
 ## Payroll(EE)
 
-## Fleet
+### Fleet
