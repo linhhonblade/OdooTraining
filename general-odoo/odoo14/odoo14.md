@@ -107,8 +107,8 @@
 
 ## Vendor bills
 
-[Bills List View Odoo 13](bill_list_13.png)
-[Bills List View Odoo 14](bill_list_14.png)
+![Bills List View Odoo 13](bill_list_13.png)
+![Bills List View Odoo 14](bill_list_14.png)
 
 ## Expense
 
@@ -116,10 +116,10 @@
 - Behind the scene, we categorize all expenses in diff categories (food, restaurants, parking, travel..). User can link category to the products. You can link the expense acount to the product
 - New Disallowed Expenses Report: Disallowed expenses are those expenses that cannot be deducted in the fiscal result but can be deducted in your bookkeeping result
 
-[Disallowed Expense Categories](disallowed_categ_14.png)
-[Setup Disallowed Expenses for an account](COA_disallow_14.png)
-[Disallowed Expenses Report: you will see all the disallowed expenses categories with all the expenses accounts linked to it](disallowed_report_14.png)
-[](general_ledger_disallowed_14.png)
+![Disallowed Expense Categories](disallowed_categ_14.png)
+![Setup Disallowed Expenses for an account](COA_disallow_14.png)
+![Disallowed Expenses Report: you will see all the disallowed expenses categories with all the expenses accounts linked to it](disallowed_report_14.png)
+![](general_ledger_disallowed_14.png)
 ## Reporting
 
 - Odoo Spreadsheet
@@ -128,18 +128,18 @@
 ## Currency
 
 - New Report when enabling Multi-currencies: Unrealized currency gains/losses
-[](currency_rpt_14.png)
+![](currency_rpt_14.png)
 
 - Post the entry for adjustment of currency gain/loss automatically (or manually) - other info tab
 - Adjustment entry will be automatically posted at the correct accounting date
-[](adj_entry_currency_14.png)
-[](currencty_entry_14.png)
-[](currency_rpt_with%20adj_entry_14.png)
+![](adj_entry_currency_14.png)
+![](currencty_entry_14.png)
+![](currency_rpt_with%20adj_entry_14.png)
 
 ## Taxes
 
 - Larger range of tax return possibilities
-[](tax_return_period_14.png)
+![](tax_return_period_14.png)
 
 ## Payment Refractoring
 
@@ -147,31 +147,31 @@
   - Every Bank Journal will have specific Suspense Account: the moment you synchronize bank statements / import bank transactions, they re immediately posted
   - the bank account then will be updated in BL sheet
 
-[Suspense Account for Bank Journal](bank_account_14_1.png)
+![Suspense Account for Bank Journal](bank_account_14_1.png)
 
 - Add transfer accounts and track payments
 
-[Outstanding Receipts in Bank Journal](bank_account_14_2.png)
+![Outstanding Receipts in Bank Journal](bank_account_14_2.png)
 
 - Any payment register (for invoice or bills) will be automatically posted to transfer accounts
-[auto reconciled to the transfer account](bl_sheet_14.png)
+![auto reconciled to the transfer account](bl_sheet_14.png)
 
 - The journal entries for bank statement is automatically posted with the counterpart is the suspense account
 
-[Bank Statement](bank_stmt_14.png)
-[Journal Entries (automatically posted)](posted_journal_entries_14.png)
-[Journal Entry with counterpart Suspense Account](bnk1_14.png)
+![Bank Statement](bank_stmt_14.png)
+![Journal Entries (automatically posted)](posted_journal_entries_14.png)
+![Journal Entry with counterpart Suspense Account](bnk1_14.png)
 
 - After reconciliation of the bank statement, the right account will be updated in the journal entries
 
-[Bank statement after being reconciled](bank_stmt_reconciled_14.png)
-[The updated journal entry after reconciliation of bank statement](entry_updated_af_reconcile.png)
+![Bank statement after being reconciled](bank_stmt_reconciled_14.png)
+![The updated journal entry after reconciliation of bank statement](entry_updated_af_reconcile.png)
 
 ## Implement Accounting
 
 - Invoicing, Inventory, eCommerce,... are integrated with Accounting (event when u r not installing it on your server). They also create accounting entries
 - But when you want to start with the official Accounting application, you just want to import the opening balance
--
+- If u dont do anything, the opening balance tgt with all accounting transaction
 
 # Documents
 
@@ -192,8 +192,8 @@
 - workspace can be hierarchy
 - easy to send a file to Documents App by using email alias
 
-[Documents App Odoo 14](action_document_14.png)
+![Documents App Odoo 14](action_document_14.png)
 
 - split document easily
 - The AI take responsible for providing the correct expense account for vendor bill (by remember the combination of the label, supplier)
-[Split Documents](split_document_14.png)
+![Split Documents](split_document_14.png)
