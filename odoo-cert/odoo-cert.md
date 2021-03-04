@@ -1051,3 +1051,220 @@ Up to 10
 - [ ] By adding es_es like this : test.odoo.com/our-products/es_es/refunds
 - [ ] By adding es_es like this : test.odoo.com/our-products/refunds/es_es.
 - [x] By adding es_es like this: test.odoo.com/es_es/our-products/refunds.
+
+## Events
+
+###  What do I need to have talks appearing in my event agenda?
+- [ ] Create a website menu
+- [ ] Create a track menu
+- [ ] Create tracks
+- [x] All of the above
+
+### How can I allow people to suggest their talks for my event?
+- [ ] By setting up an email to receive all the proposals
+- [ ] By manually create a new page with a form builder
+- [x] By adding a talks proposal menu to my event
+- [ ] You can't do that
+
+### My event is in 20 days and I sent an email reminder 10 days before. What will the email template say if I open it exactly one week before the event?
+- [ ] "We are excited to remind you that the event is starting in 10 days."
+- [ ] "We are excited to remind you that the event is starting in 5 days."
+- [x] "We are excited to remind you that the event is starting next week."
+- [ ] "We are excited to remind you that the event is starting in 20 days."
+
+### When should I choose a website on my event form?
+- [ ] When you want to exclude the event from that website
+- [x] When you want to restrict the publication to that website
+- [ ] When you want to add it to the website menu
+- [ ] When you want to add sponsors on the event so it appears on the website
+
+### I want to offer lunch to my visitors during my event. Some are vegetarian, the others are not. Should I use "ask each attendee"?
+- [x] Yes
+- [ ] No
+
+### What data do you need in your Pivot Table to be able to track your attendee source?
+- [x] Source Medium
+- [ ] Source Campaign
+- [ ] Source Name
+- [ ] External Source
+
+### Where do you need to put the count column so the number of people from each source will be automatically counted?
+- [ ] Report Filter
+- [x] Values
+- [ ] Row Labels
+- [ ] Column Label
+
+## Survey
+
+### How to delete a question in a survey?
+- [x] Edit - Click on the little trash bin.
+- [ ] You can’t. You have to delete the survey and create a new one.
+- [ ] Edit - Options - delete questions
+
+### How many times can you attempt a test?
+- [x] As many as you want if no attempts limit has been set.
+
+### Where can you determine the scoring when creating a survey?
+- [x] Options - Scoring - determine the % needed for success.
+
+## Documents
+
+### Which types of files can you upload to the Documents app?
+- [x] Any type of file.
+- [ ] Only word processor and text files (e.g. .doc, .pdf, .txt, .odt).
+- [ ] Only word processor, text files and images.
+- [ ] Only word processor, text files, images and hyperlinks.
+- [ ] Only word processor, text files, images, hyperlinks, video and audio files.
+
+### Which of the following sentences is false?
+- [ ] A sub-workspace has the same tags as its parent-workspace.
+- [x] A locked file cannot be modified by anyone.
+- [ ] You can preview your documents directly from the app dashboard.
+- [ ] A file can have several tags.
+
+### What kind of Action and Action Category will add a "To Review" tag to your document?
+- [ ] Replace by - Status
+- [ ] Add - Status
+- [ ] A "add" or "replace by" action, with a created category
+- [x] The three above possibilities are correct
+
+### Now that my Accounting app is integrated with my Documents app, how can I turn my Purchase Orders into Vendor Bills?
+- [ ] By using the "Automated Actions" feature
+- [x] By using the "Workflow Actions" feature
+- [ ] By using the "Folder Actions" feature
+- [ ] By using the "Tag Actions" feature
+
+## Point of Sales
+
+### How can I sort my products so I have sub-menus on my PoS front-end?
+- [ ] By using tags
+- [x] By using categories
+- [ ] By adding comments on your products.
+
+### I want a custom message with "Welcome" at the beginning of my bills. How can I do this?
+- [ ] By adding the message manually every time you print a bill.
+- [ ] You can only add an address in the bill printing feature
+- [ ] You can't add a message at the beginning of the bill. But you can do so at the end of it
+- [x] By using the header feature and adding "Welcome".
+
+### How can I have an overview of my table placements directly in the front-end?
+- [x] By enabling the table management feature and creating tables either from the back-end or the front-end.
+- [ ] You can't do that
+- [ ] By creating floor plans. Then Odoo will create everything automatically so you just have to edit what doesn't suit your business.
+- [ ] By entering the latitude and longitude of your tables so a robot can verify you are telling the truth.
+
+### A customer ordered a heated part of pecan pie. What feature can I use to tell it to the kitchen?
+- [ ] Warning
+- [ ] Message
+- [ ] Note
+- [ ] Order
+
+### How can I refund my customers?
+- [ ] By clicking on the refund button in the backend
+- [ ] By clicking on "refund" on the bill overview, directly in the front-end.
+- [ ] By using the transfer feature
+- [x] By clicking on the +/- button and adding the number of products you want to refund
+
+### When a customer returns a product, can I cancel the original receipt in the backend?
+- [ ] Yes, of course
+- [x] No, it's not even legal
+
+### Which other app is important for cash control?
+- [ ] Purchase
+- [x] Accounting
+- [ ] Sales
+- [ ] Project
+
+### What do I need in case of a difference between my starting and ending balance?
+- [ ] Who cares about differences?
+- [ ] An account automatically generated by Odoo
+- [x] A profit and loss account
+- [ ] Nothing, differences will be recorded in the PoS app
+
+## Advanced Settings
+
+### Two groups (A and B) can create and validate quotations. If I remove this right from the group A, does it means that all people from this group will lose the right?
+- [ ] No, rights previously obtained won't be removed.
+- [x] Yes, except if they are in group B too.
+- [ ] Yes, all the rights removed from a group will have an impact on the other groups.
+- [ ] No, you can't edit rights once the group has been created.
+
+### What will the common contact book feature do if you enable it?
+- [x] It will share your partners to all companies defined in your database.
+- [ ] It will disable the partners sharing between your companies.
+- [ ] It will share your future partners to all companies defined in your database.
+- [ ] It will disable the partners sharing between your companies, but only for new contacts.
+
+### How can I restrict access to a company for one of my employee?
+- [ ] By choosing a current company on the employee form.
+- [x] By removing the company from the allowed companies on the user form.
+- [ ] By removing the company from the allowed companies on the employee form.
+- [ ] By removing the employee's access rights for the company.
+
+## Planning
+
+### What does it have to be done so employees can see their shifts?
+- [ ] Shifts have to be saved.
+- [ ] Shifts have to be simply created in the database.
+- [x] Shifts have to be published.
+- [ ] None of the above.
+
+### Which are the shifts shown on the Open Shifts row?
+- [ ] Shifts that have no employee or manager assigned.
+- [x] Shifts that have no employee assigned.
+- [ ] Shifts that have no project assigned.
+- [ ] None of the above.
+
+## Barcode
+
+### How does a barcode scanner work?
+- [ ] It acts as an image capture device. The device it is connected to then decodes the image and converts it into digits and characters.
+- [x] It acts as a keyboard, by reading the binary code through the lines of a barcode. It sends digits and characters as an output to the device it is connected to.
+- [ ] It acts as an image capture device. The device it is connected to then compares the scanned image with all the other barcodes stored in a database until there is a match.
+
+### Linear barcodes are used by Odoo to:
+- [ ] Scan products.
+- [x] Scan products and trigger actions.
+- [ ] Scan products, trigger actions, and generate SEPA QR codes.
+
+### How can I add barcodes to all my products in my database? I would rather not open the products' Form Views individually.
+- [ ] In Inventory -> Configuration -> Settings -> Barcode Management, synchronize your products list with an online distributor's database.
+- [ ] In Barcode / Configuration, open the "Add Barcodes" menu, then scan a barcode and select the related product in the right column.
+- [ ] In Barcode / Configuration, open the "Add Barcodes" menu, then import the .xml file generated by the products' producers.
+- [x] In Inventory / Configuration / Settings, click on "Configure Product Barcodes" then add the barcodes in the right column.
+
+### Where can I find a list of barcode commands to use with Odoo?
+- [ ] In Barcode / Configuration / Settings / Operations, click on "Print barcode commands".
+- [ ] In Inventory / Configuration / Operation Types, select the required actions, then click on Action / Print barcodes.
+- [ ] In your favorite cereal box.
+- [x] In Inventory / Configuration / Settings / Operations, click on "Print barcode commands".
+
+### How can I indicate to Odoo that I have received the products of a Purchase Order (P.O.) that I made?
+- [x] Open the Receipt of the P.O., print the Picking Operations then scan the Operation, the products received and finally, the validation barcode.
+- [ ] Open the Barcode app, scan the products received then select the right P.O. in the "Purchase Order" field.
+- [ ] Open the P.O. then directly scan the products and finish with the validation barcode.
+- [ ] This feature is only possible for the Sales Orders, not the Purchase Orders.
+
+### What do I need to configure to do internal transfers of my products with a barcode scanner?
+- [ ] Add barcodes to the different Locations in the Inventory app.
+- [x] Enable "Storage Locations" in Inventory / Configuration / Settings and add barcodes to the different Locations in the Inventory app.
+- [ ] Enable the Warp Drive, Mr. Sulu
+- [ ] Enable "Inventory Moves" in the Barcode app and add barcodes to the different Locations in the Inventory app.
+
+## eLearning
+
+### How can you publish your course?
+- [ ] All courses are automatically online and available once created.
+- [ ] From the course dashboard.
+- [x] From the Website.
+
+### How can a student earn points?
+- [ ] Interacting on the forum
+- [ ] Finishing a course
+- [ ] Adding reviews
+- [x] All of the above
+
+### What does the "allow preview" option do?
+- [x] Non-enrolled students are be able to see the content.
+- [ ] Only enrolled students are able to see the content.
+- [ ] The content is highlighted on the website.

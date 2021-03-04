@@ -1,3 +1,7 @@
+# Elsaka Survey
+
+## Odoo 12
+
 1. Vendor list of products will be automatically added to Request for Quotation every time we create it - False
 2. In the Sales-team reporting section, how is the untaxed total amount calculated? - Total amount of the validated sales order.
 3. A customer is linked to the Public Pricelist. You have created a quotation for that client for several products. If you change the pricelist on the quotation, what will happen to the price of the products on the quotation - Only the price of newly added products will be calculated using the new pricelist
@@ -64,3 +68,16 @@ Operation types available for a given warehouse
 57. How many times can each coupon code be used? - 1 time
 58. Does odoo store your answers to be analyzed in back end once your answer the question and move to next page ( before submitting the survey)? - Yes
 59. Does odoo store your answers to be analyzed in back end once your answer the question and move to next page ( before submitting the survey)? - Yes
+60. What will be scheduled purchase order date, if I validate a sales order at October 25th, knowing that:
+    1.  ->Product is set as “ Buy” & “Make to Order”
+    2.  ->Customer lead Time is set to 10 Days
+    3.  ->Vendor Lead Time is set to 6 Days
+    4.  ->Company Secuirty Lead Time for Purchase is set to 2 Days
+61. What’s the purpose of Engineering change Orders (ECO)? - Manage BOM and routing version
+62. If you buy a product, is the stock move created when the receipt is marked as ‘Done’? - Yes
+63. How can I automate the taxes' recognition process based on my customers' location? - By creating fiscal positions in the Accounting app.
+64. Which feature should I use to upsell? - Accessory
+65. If we define a multi-level bill of material for a finished product with Make to Order route, how many manufacturing orders are created when we have a confirmed procurement for this finished product?
+- [ ] One manufacturing order if sub product has enough stock on hand
+- [ ] Always two Manufacturing orders
+- [ ] No Manufactuirng orders
