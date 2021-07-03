@@ -1,6 +1,12 @@
 # Website
 
 - change picture quality (make website loadfaster)
+
+![](website_13_14.png)
+![](img_srch_13_14.png)
+
+web page load faster 3.42 times
+
 - list view improved
 ![List View Odoo 13](crm1.png)
 ![List View Odoo 14](crm2.png)
@@ -17,8 +23,15 @@
     - forecasted stock
     - available (red icon when available < qty order)
 
+- New appearance for forecasted report
+![](fore_cast_13_14.png)
 ![inventory](inventory1.png)
 ![](inventroy2.png)
+
+- Easier to manage replenishment with Replenishment action
+![](replenishment_graph_14.png)
+
+
 ![](Screenshot%20from%202021-01-28%2016-36-00.png)
 ![](Screenshot%20from%202021-01-28%2016-41-50.png)
 
@@ -28,18 +41,28 @@
 
 # Barcode
 
-- wave picking
-- batch picking
-- cluster picking
+![](barcode_13_14.png)
+![](batch_transfer_barcode.png)
+
+- Wave Picking (set routes for product/product categories) and Batch Picking (Batch Transfer) (13 + 14)
+![](batch_picking_14.png)
+![](batch_picking_14_2.png)
+
+- New Picking Strategies: Cluster Picking
+![](cluster_picking_14.png)
 
 # Timesheet
 
 - Shortcut for switching project and log work
+![](timesheet_13_14.png)
+
 - use hot key to add 15m to a specific project
+![](timesheet_hotkey_14.png)
 
 # Expenses
 
 - record expenses by snapping a picture (Odoo App)
+- more in Accounting
 
 # Manufacturing
 
@@ -47,6 +70,15 @@
 
 ![](MO1.png)
 ![](MO2.png)
+
+- Change priority to get components reserved
+![](MO_not_avail_component_14.png)
+![](MO_forecasted_rpt_14.png)
+![](MO_change_prio_14.png)
+![](MO_forecasted_rpt_af_prio_change_14.png)
+
+- Create Operation: Work Center is mandatory
+- Miscellaneous:
 
 # Purchase
 
@@ -171,7 +203,26 @@
 
 - Invoicing, Inventory, eCommerce,... are integrated with Accounting (event when u r not installing it on your server). They also create accounting entries
 - But when you want to start with the official Accounting application, you just want to import the opening balance
-- If u dont do anything, the opening balance tgt with all accounting transaction
+- If u dont do anything, the opening balance tgt with all accounting transactions will make double entries.
+- Now, Odoo will take care of all those prev entries. Just set the date of the go-live of Odoo Accounting, Odoo will archived all neccessary entries
+- All invoices still there but in a new stage: invoicing app legacy (only the accounting entries behind are archived)
+- I would like to start Accounting on the 1st Oct, and a fresh start
+
+![](switch_threshold.png)
+
+- All Invoices and Bills before the date will be cancelled
+
+![](cancelled_inv.png)
+
+- Report refreshed
+
+![](balance_sheet.png)
+
+## Misc
+
+- New Auditor role (Read-only access right)
+- Preview accounting entries b4 posting them
+-
 
 # Documents
 
@@ -197,3 +248,58 @@
 - split document easily
 - The AI take responsible for providing the correct expense account for vendor bill (by remember the combination of the label, supplier)
 ![Split Documents](split_document_14.png)
+
+## Document Settings
+
+![](document_settings_13_14.png)
+-> When u send&print an invoice or any document, the file will be sent to Documents too (to the workspace u set in settings)
+- To access Actions in Documents, activate dev mode
+
+
+# HR and Payroll
+
+
+# Events
+
+- for ticket option in settings (Sell tickets with sales order): need ecommerce
+![](event_setting_13.png)
+![](event_setting_14.png)
+![](events_13.png)
+![](events_14.png)
+
+- Event field is mandatory in Track form
+- Other information about speaker (email, phone, bio) will be populated after choosing the speaker (speaker field is not mandatory)
+- When save a track, it is in proposal stage
+- Track proposal on website (allow website visitor) register for a talk proposal for an event
+
+- The email template will update the time until your event based on the day you open the remind email
+
+## Point of Sales
+
+- Available on POS is checked by default if u create product inside POS app, but wont if in others
+
+- Cash control: in Odoo14, set openning balance whenever u start new session (not at the shop setting anymore like Odoo13)
+![](cash_control_13.png)
+![](cash_control_14.png)
+### Settings
+
+- Is a Bar/Restaurant
+- Authorized Employees: Use employee credentials to log in to the PoS session and switch cashier
+- Manage Orders: Reprint receipt, refund and exchange orders
+- Product Configurator: Select product attributes
+- Restrict Product Categories: Pick which product categories are available
+- Large Scrollbars: Improve navigation for imprecise industrial touchscreens
+- IoT Box: Connect devices using an IoT Box
+- Direct Devices: Connect devices to your PoS directly without an IoT Box
+- Global Discount: Allow global discounts on orders
+- Manual Discount: Allow discount per line
+- Price Control: Restrict price modification to managers
+- Payment Methods: Payment methods are available
+- Advanced Cash Control: Control cash box at opening and closing (w authorized difference maximum)
+- Header & Footer: Add a custom message to header and footer
+- Automatic Receipt Printing: Print receipts automatically once the payment is registered
+- Invoicing: Print invoices on customer request
+- Operation Type: Operation type used to record product pickings
+Products will be taken from the default source location of this operation type
+- Journal Entries: Configuration for journal entries of PoS orders
+- Sales Team: Sales are reported to the following sales team

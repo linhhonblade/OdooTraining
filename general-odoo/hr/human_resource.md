@@ -83,6 +83,7 @@
 
 # Recruitment
 
+- The button `Generate Offer Link` will be able in Applications form if you install `salary_configurator` module
 - Create job position from dashboard view or config > job postions
 - Job position:
   - only thing required is name of the job

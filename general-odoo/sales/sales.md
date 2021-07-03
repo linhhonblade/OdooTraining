@@ -40,7 +40,7 @@
 - Destination Availability
 - The price of the delivery cost will be orange if we are using the price which is not following the rule we set up
 - The sequence in pricing tab of Shipping method (Based on rule) does matter
-- The firs one of the list will be the first to apply
+- The first one of the list will be the first to apply
 
 ## Delivery Lead Time (Customer Lead Time)
 
@@ -88,7 +88,6 @@ Note
 - A single sale price per product : doesn’t let you adapt prices, it use default product price ;
 - Different prices per customer segment : you will set several prices per products ;
 - Advanced pricing based on formula : will let you apply discounts, margins and roundings.
-- Make sure you have default prices set in the pricelist outside of the deals period. Otherwise you might have issues once the period over.
 - Make sure you have default prices set in the pricelist outside of the deals period. Otherwise you might have issues once the period over.
 
 Note

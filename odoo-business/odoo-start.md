@@ -70,3 +70,11 @@ Odoo Enterprise apps can be hosted on 3 different platforms:
   - A development and staging environment
   - Branch management (track, fork, merge, etc...)
   - Automated testing of every new commit
+
+# OIM Project Leader - Onboarding Partners
+## The "Odoo Implementation Methodology"
+- The "Odoo Implementation Methodology" (a.k.a "QuickStart") is the approach Odoo has chosen over the years.
+- fit 80% clients
+- but for bigger project (> 100-150 users) on multiple applications &rarr; heavy development
+- however, even for larger project (several thousands of users) &rarr; still refer to OIM as a guideline
+-

@@ -53,7 +53,7 @@
 - Config in product form, inventory tab, route: make to order
 
 ### Resupply from another Warehouse
-- Actiate Multi-Warehouses + Multi-Step Routes
+- Activate Multi-Warehouses + Multi-Step Routes
 - Enter the warehouse which should be resupplied by another one, in warehouse form
 - By activating this option, a new route will now be available on your products *Supply Product from Second warehouse*. It can now be selected, along with either a *reordering rule* or a *make to order*.
 - Run Scheduler:
@@ -140,7 +140,7 @@
 
 > For example, product B is ordered on the 2nd of April but the Customer Lead Time is two days. In that case, the expected delivery date is the 4th of April.
 
-- Sales Security Lead Time corresponds to backup days to ensure you are able to deliver the products in time. The purpose is to be ready shipping earlier in order to arrive on time. The number of security days is subtracted from the calculation to compute a scheduled date earlier than the one promised to the customer. Activate in Inventory
+- Sales Security Lead Time corresponds to backup days to ensure you are able to deliver the products in time. The purpose is to be ready shipping earlier in order to arrive on time. The number of security days is subtracted from the calculation to compute a scheduled date earlier than the one promised to the customer. Activate in Inveschntory
 
 > For example, product B is scheduled to be delivered on the 6th of April but the Security Lead Time is one day. In that case, the scheduled date for the delivery order is the 5th of April.
 

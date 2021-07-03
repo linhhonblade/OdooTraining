@@ -1,4 +1,2 @@
-About Odoo functional
-
-References:
+## References:
 - [Odoo User Documentation](https://www.odoo.com/documentation/user/14.0/index.html)

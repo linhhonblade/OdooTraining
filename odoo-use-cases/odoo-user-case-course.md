@@ -50,12 +50,14 @@ One distribution center and store revolving around it
 
 ## Description
 
+```shell
 Distribution Center/
 |
 |--Store 1
 |--Store 2
 |--Store 3
 |--Store 4
+```
 
 - Purchasing activities take place in the Central Warehouse (Stores are not allowed to order directly from external suppliers)
 - They refill the store shelves directly from central warehouse
@@ -74,3 +76,6 @@ Distribution Center/
 
 - What would be the preferred set up for this network configuration?
 - How would you handle occasional resupply from stores to stores
+
+## Answer
+

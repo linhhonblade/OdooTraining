@@ -137,13 +137,15 @@
 - [ ] Idk
 ### 2. How is the total due by a customer computed?
 - [ ] The sum of the unpaid invoices from this customer
-- [x] The balance related to this customer in receivable accounts
-- [ ] The sum of invoices minus the sum of payments of this customer
+- [ ] The balance related to this customer in receivable accounts
+- [x] The sum of invoices minus the sum of payments of this customer
 - [ ] Idk
 ### 3. Will Odoo allow to create an invoice (with a tax) in a closed tax period?
-- [ ] Yes
-- [x] No
+- [x] Yes
+- [ ] No
 - [ ] Idk
+
+Any new transaction which accounting date is prior to the Tax Lock Date has its tax values moved to the next open tax period. This is useful to make sure that no change can be made to a report once its period is closed.
 ## Purchase
 ### 1.
 - [ ] 1000$
@@ -240,6 +242,103 @@ Up to 10
 ### Can I specify the contact fields I want to export?
 - [x] Yes
 - [ ] No
+### How can you automatically generate leads or opportunities in your CRM app when a visitor fills in a form on your website
+- [ ] It is not possible
+- [x] By selecting "Create an opportunity" as the form's action
+- [ ] By installing the Marketing Automation app
+- [ ] By using the "Lead generator" building block to create the form
+### Can you sell a product for which your inventory displays a quantity of 0?
+- [x] Yes
+- [ ] Yes, but only if you first have set a replenishment/reordering rule
+- [ ] Yes, but only if your product has an invoicing policy set to "on delivered quantities"
+- [ ] No, it is illegal
+### Where do you go to invoice all your customers at once?
+- [ ] Go to Accounting app > To invoice > Create Batch invoice
+- [ ] Go to the CRM app > select all "Won" opportunities > Send Invoices
+- [x] Go to Sales app > To Invoice > Orders to Invoice
+- [ ] It is not possible, you have to create each invoice separately
+### If you want a project and tasks created when a sales order is confirmed, which of the following service tracking options do you need to pick?
+- [x] Create a task in sales order's project
+- [ ] Create a new project but no task
+- [ ] Create a task in an existing project
+- [ ] Timesheet on tasks
+
+### The timesheet hours recorded at tasks are shown in which of the following columns in the sales order?
+- [ ] Invoiced
+- [ ] Quantity
+- [x] Delivered
+- [ ] None of the above
+### When configuring Expense Products, what are the Re-invoice options available?
+- [ ] No reinvoicing
+- [ ] At cost
+- [ ] Sales price
+- [x] All of the above
+### My company chooses to invoice clients in batches, at the end of the month. When creating a batch, can I choose a specific timesheet period?
+- [ ] No, only when creating individual invoices, not in batches
+- [x] Yes, when creating invoices in batches, a specific timesheet period can be choosen
+- [ ] Yes, by selecting the option "Timesheet/Batches" in the settings
+### What does the Split action do?
+- [ ] It splits a single page into two pages
+- [ ] It splits the documents into different workspaces
+- [x] It splits a batch of documents into separate files
+- [ ] None of the above
+### When I use an email address to receive documents: does Odoo create a new email account, or use an email alias?
+- [ ] new email
+- [ ] Email alias
+- [ ] This is not possible. You need to continue receiving them by mail and scanning them
+- [ ] An email alias, but for that, a third-party app is neccessary
+### I would like to send a document to be signed by my customer and employee. Is this possible?
+- [x] Yes
+- [ ] Yes, but only if your customer is an Odoo user
+- [ ] No
+- [ ] I need a genie lamp!
+### How should you configure a product or service that is invoiced based on time and materials (as opposed to fixed price)?
+- [ ] Invoice based on ordered quantities
+- [x] Invoice based on delivered quantities
+- Invoice based on milestones
+### How can I invoice the customer for the time my employees worked on the project?
+- [ ] By setting the "product" (architect in the video) as a consumable and the invoicing policy as ordered quantity
+- [ ] By setting the "product" (architect in the video) as a service and the invoicing policy as ordered quantity
+- [ ] By setting the "product" (architect in the video) as a service and the invoicng policy as timesheets on tasks
+- [x] By setting the "product" (architect in the video) as a service and the invoicing policy as timesheets on tasks
+- [ ] By setting the "product" (architect in the video) as a consumable and the invoicng plicy as timesheets on tasks
+### My Wood Panels are set up as invoicng the delivered quantities and re-invoice at sales price. The cost of the product is 50$ and the price is 80$. What wil be invoiced to the customer for 5 wood panels?
+- [ ] 50$
+- [ ] 80$
+- [ ] 250$
+- [x] 400$
+### How can you make the communication between the front-of-house (dining room) and the back of house (kitchen) better?
+- [ ] By using the print bill feature from the PoS front-end
+- [x] By using the order print feature from the PoS front-end
+- [ ] By using the kitchen feature from the PoS front-end
+- [ ] By using the kitchen feature from the PoS back-end
+### Is it possible to offer takeaway service when using Odoo? If so, how?
+- [ ] No, it is not possible
+- [ ] Yes, by installing and configuring the Rental app
+- [ ] Yes, by installing and configuring the Purchase app
+- [ ] Yes, by installing and configuring the Sales app
+- [x] Yes, by installing and configuring the Website/Ecommerce app
+### Why should you map your restaurant rooms on the PoS?
+- [x] It offers a clear overview of each room and its table's orders when clicking on the table from the map
+- [ ] So the waiters can have an overview of the tables
+- [ ] You need to map your restaurant to take orders
+- [ ] It is the feature that enables the bill spliting
+### About the registration qeustions: if 'Ask only once per order' is not enabled:
+- [ ] The question is asked once per order
+- [x] The question is asked once per attendee
+- [ ] Questions are randomized if more than one question was created, making only one question being asked per attendee
+- [ ] None of the above
+### To create a Lead Generation rule, I have to go to:
+- [x] Events &rarr; Configuration &rarr; Lead Generation &rarr; Create
+- [ ] Events &rarr; Settings &rarr; Lead Generation &rarr; Create
+- [ ] Events &rarr; Lead Generation &rarr; Create
+- [ ] CRM &rarr; Configuration &rarr; Events &rarr; Lead Generation &rarr; Create
+### Can I create and send a post to multiple social platform at once?
+- [ ] No, posts have to be created and posted individually, by stream
+- [ ] Yes, but the content has to be created individually, by stream, and then scheduled to be posted at the same time
+- [x] Yes, posts can be created and posted to multiple streams at the same time
+- [ ] No, posts can be created at the same time but have to be posted individually
+
 ## Purchase
 ### Is it possible to directly create a Purchase Order?
 - [ ] Yes, from the Purchase Order menu.
@@ -1268,3 +1367,134 @@ Up to 10
 - [x] Non-enrolled students are be able to see the content.
 - [ ] Only enrolled students are able to see the content.
 - [ ] The content is highlighted on the website.
+
+## Rental
+### How do you configure a product to be able to rent it
+- [ ] You need to create a calendar for this product
+- [ ] You need to have Rent in the product name
+- [x] You need to tick the "Can be Rented" box
+
+### Can you add non-rental products to a Rental order?
+- [x] Yes
+- [ ] No
+- [ ] Only if your first product is a rental product
+
+### What will be the rental cost of a product for 8 days if my rental picking is set up like this: 1day=50$, 3days=110$, 1week=200$
+- [ ] 400$
+- [x] 330$
+- [ ] 250$
+
+### What does the clock icon mean when returning a product?
+- [ ] There is only one day left to return the product
+- [x] It indicates a late return
+- [ ] You can check the rental duration by clicking on it
+
+### From the "Schedule" menu, how to know products have been returned?
+- [ ] Returned products no longer appear in the schedule
+- [ ] It is not possible
+- [x] The bar related to the order is in another color, and a tooltip says "Returned"
+
+## Field Service
+### Can you have more than one Field Service project?
+- [ ] No
+- [x] Yes
+- [ ] Yes, but only if each project is dedicated to a specific customer
+
+### Where can you go to create a new task
+- [ ] By going to My Tasks
+- [ ] By going to All Tasks
+- [ ] By going to Planning
+- [x] All of the above
+
+### Can you record additional time under a task after it is marked as done?
+- [ ] No
+- [ ] Yes
+- [x] Yes, but only by using the timesheet tab
+- [ ] Yes, but only by using the timer
+
+### What happens when you mark a task as done?
+- [ ] You can create an invoice
+- [ ] It updates your inventory, if necessary
+- [ ] It moves the task from 'New' to 'Done'.
+- [x] All of the above
+
+### What are Worksheets?
+- [x] Descriptions, to the customer, of the work done
+- [ ] Descriptions, to the employer, of the work left to be done
+- [ ] Sheets where employee
+
+### What feature do you need to enable to create Field Service tasks directly from the Helpdesk app?
+- [x] Onsite interventions
+- [ ] Field Service Activation
+- [ ] Plan Intervention
+- [ ] Ticket Creation
+
+### In the Planning tab, which cell color indicates that an employee isn't working on that day?
+- [x] Grey
+- [ ] White
+- [ ] Red
+- [ ] Yellow
+
+### How do you enable recurring tasks?
+- [ ] By going to the Helpdesk app > Configuration > Settings > and enabling Recurring Tasks
+- [ ] It is not possible to create recurring tasks
+- [x] By going to the Projects app > Configuration > Settings > and enabling Recurring Tasks
+- [ ] By going to the Field Service app > Configuration > Settings > and enabling Recurring Tasks
+
+## Helpdesk
+### Which ticket assignment method gives to the user with the least amount of open tickets?
+- [ ] Manually
+- [x] Balanced
+- [ ] Random
+- [ ] None of the above
+
+### How can I set up an automated email to go out once a ticket's stage changes?
+- [ ] Under Configuration > Stages > Edit > Email Template
+- [ ] On the Team Overview page, under the small conf symbol (settings) > Edit Stage > Email Template
+- [x] Under Configuration > Stages > Edit > Email Template and on the Team Overview page, under the small con symbol (settings) > Edit Stage > Email Template
+- [ ] Under Configuration > Ticket Type > Create
+- [ ] None of the above
+
+### How can I see a list view of my High Priority tickets?
+- [ ] By clicking on the High Priority section under "My Tickets" on the main dashboard
+- [ ] By clicking on the High Priority section under "My Performance" on the main dashboard
+- [ ] BY going to Tickets > My Tickets and Adding a Custom Filter > Priority is High Priority
+- [x] By clicking on the High Priority section under "My Tickets" on the main dashboard and by going to Tickets>My Tickets and Adding a Custom Filter>Priority is High Priority.
+- [ ] None of the above
+
+### What information is added to a ticket once it matches an SLA policy?
+- [x] A tag and deadline, which is based on the date and hour of the ticket's creation
+- [ ] A deadline
+- [ ] A tag
+- [ ] None of the above
+
+### How many SLAs can I create?
+- [ ] 1
+- [ ] 10
+- [ ] 7
+- [x] None of the above
+
+### How many priority levels are available?
+- [x] 3: low, hight, urgent
+- [ ] 2: low, urgent
+- [ ] 4: low, medium, high, urgent
+- [ ] None of the above
+
+### What is an Email Alias?
+- [ ] An external incoming email server that creates tickets
+- [x] An incoming email address that creats tickets. It turns the title of the email as the title of the ticket
+- [ ] An incoming email address that will send an email helpdesk team member
+- [ ] None of the above
+
+### What is the Website Form option of opening a ticket
+- [x] It is an option to allow users to open a ticket from an online form on the website
+- [ ] It allows a ticket to be created when a user fills the Contact Us page.
+- [ ] It is a form where users can ask a customer support representative to open a ticket.
+- [ ] None of the above.
+
+### What is the command used to create a ticket from a live chat window?
+- [ ] \helpdesk (name of the ticket).
+- [ ] ..helpdesk (name of the ticket).
+- [x] /helpdesk (name of the ticket).
+- [ ] None of the above.
+

@@ -80,6 +80,8 @@
 - Bank reconciliation lines are not blue because you havent had a payment register, but you can continue to reconcile the bank statement with the invoice (journal entry)
 - In Bank Account Template: choose Post at bank reconciliation = odoo post the entries in the journal only after the bank statement has been reconciled (extra layer of security)
 
+- Hit CTRL-Enter to reconcile all the balanced items in the sheet.
+
 # Vendor Bills Batch Payments
 
 - Enable Checks in settings to Print checks to pay your vendor
@@ -100,6 +102,13 @@
 
 - Remember to activate other currency (remember to remove the filter for active currencies)
 - can activate automatic currency date also
+- You can manually configure the currency rates in Configuration ‣ Currencies
+- Only the active currencies are updated
+- In the accounting application, go to Adviser ‣ Charts of Accounts. On each account, you can set a currency. It will force all moves for this account to have the account currency.
+- If you leave it empty, it means that it can handle all currencies that are Active.
+- In order to register payments in other currencies, you have to remove the currency constraint on the journal. Go to the accounting application, Click on More on the journal and Settings. If a currency is filled in, it means that you can register payments only in this currency.
+
+- In order for an exchange difference entry to be created automatically, the corresponding invoices and payments need to be fully reconciled. This means the invoices are fully paid and the payments are fully spent on invoices. If you partially pay 3 invoices from 2 payments, and the last invoice still has an amount due, there will be no exchange difference entry for any of them until that final amount is paid.
 
 # Reports and Financial Statements
 
@@ -171,4 +180,8 @@
   - Number of Recognitions
 - Product should be set with income account as the deferred account
 - Product can be Consumable, Service, Storable
+
+Expense Account in Product Form: Expense Account is set in Product category level (use in product level when anglo-saxon)
+
+Price Difference Account in Product Form: This account is used in automated inventory valuation to record the price difference btw a purchase order and its related vendor bill when validating this vendor bill (company specific)
 

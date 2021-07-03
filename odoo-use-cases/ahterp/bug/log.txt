@@ -1,0 +1,142 @@
+2021-01-18 02:25:26,384 22370 ERROR arrowhitech-13-1 odoo.addons.base.models.ir_cron: Unexpected exception while processing cron job {'id': 2, 'ir_actions_server_id': 118, 'cron_name': 'Mail: Email Queue Manager', 'user_id': 1, 'active': True, 'interval_number': 1, 'interval_type': 'hours', 'numbercall': -1, 'doall': False, 'nextcall': datetime.datetime(2021, 1, 13, 11, 7, 11), 'lastcall': datetime.datetime(2021, 1, 13, 10, 7, 26), 'priority': 5, 'create_uid': 1, 'create_date': datetime.datetime(2021, 1, 8, 8, 7, 8, 524695), 'write_uid': 1, 'write_date': datetime.datetime(2021, 1, 8, 8, 7, 8, 524695)}
+Traceback (most recent call last):
+  File "/aht/www/odoo/odoo/odoo/api.py", line 790, in get
+    return field_cache[record._ids[0]]
+KeyError: 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/aht/www/odoo/odoo/odoo/fields.py", line 948, in __get__
+    value = env.cache.get(record, self)
+  File "/aht/www/odoo/odoo/odoo/api.py", line 793, in get
+    raise CacheMiss(record, field)
+odoo.exceptions.CacheMiss: 'res.users(1,).tz'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/aht/www/odoo/odoo/odoo/api.py", line 790, in get
+    return field_cache[record._ids[0]]
+KeyError: 2
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/aht/www/odoo/odoo/odoo/fields.py", line 948, in __get__
+    value = env.cache.get(record, self)
+  File "/aht/www/odoo/odoo/odoo/api.py", line 793, in get
+    raise CacheMiss(record, field)
+odoo.exceptions.CacheMiss: 'res.partner(2,).tz'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/aht/www/odoo/odoo/odoo/addons/base/models/ir_cron.py", line 238, in _process_jobs
+    registry[cls._name]._process_job(job_cr, job, lock_cr)
+  File "/aht/www/odoo/odoo/odoo/addons/base/models/ir_cron.py", line 139, in _process_job
+    now = fields.Datetime.context_timestamp(cron, datetime.now())
+  File "/aht/www/odoo/odoo/odoo/fields.py", line 1845, in context_timestamp
+    tz_name = record._context.get('tz') or record.env.user.tz
+  File "/aht/www/odoo/odoo/odoo/fields.py", line 999, in __get__
+    self.compute_value(recs)
+  File "/aht/www/odoo/odoo/odoo/fields.py", line 1138, in compute_value
+    records._compute_field_value(self)
+  File "/aht/www/odoo/odoo/odoo/models.py", line 4055, in _compute_field_value
+    field.compute(self)
+  File "/aht/www/odoo/odoo/odoo/fields.py", line 553, in _compute_related
+    record[self.name] = self._process_related(value[self.related_field.name])
+  File "/aht/www/odoo/odoo/odoo/models.py", line 5658, in __getitem__
+    return self._fields[key].__get__(self, type(self))
+  File "/aht/www/odoo/odoo/odoo/fields.py", line 976, in __get__
+    recs._fetch_field(self)
+  File "/aht/www/odoo/odoo/odoo/models.py", line 3066, in _fetch_field
+    self._read(fnames)
+  File "/aht/www/odoo/odoo/odoo/models.py", line 3133, in _read
+    cr.execute(query_str, params + [sub_ids])
+  File "<decorator-gen-3>", line 2, in execute
+  File "/aht/www/odoo/odoo/odoo/sql_db.py", line 101, in check
+    return f(self, *args, **kwargs)
+  File "/aht/www/odoo/odoo/odoo/sql_db.py", line 298, in execute
+    res = self._obj.execute(query, params)
+psycopg2.ProgrammingError: column res_partner.linkedin does not exist
+LINE 1: ..."res_partner"."sale_warn_msg" as "sale_warn_msg", "res_partn...
+                                                             ^
+
+2021-01-18 02:25:26,386 22370 INFO arrowhitech-13-1 odoo.addons.base.models.ir_cron: Starting job `Partner Autocomplete : Sync with remote DB`.
+2021-01-18 02:25:26,391 22370 ERROR arrowhitech-13-1 odoo.sql_db: bad query: SELECT "res_partner"."id" as "id", "res_partner"."name" as "name", "res_partner"."display_name" as "display_name", "res_partner"."date" as "date", "res_partner"."title" as "title", "res_partner"."parent_id" as "parent_id", "res_partner"."ref" as "ref", "res_partner"."lang" as "lang", "res_partner"."tz" as "tz", "res_partner"."vat" as "vat", "res_partner"."website" as "website", "res_partner"."comment" as "comment", "res_partner"."credit_limit" as "credit_limit", "res_partner"."active" as "active", "res_partner"."employee" as "employee", "res_partner"."function" as "function", "res_partner"."type" as "type", "res_partner"."street" as "street", "res_partner"."street2" as "street2", "res_partner"."zip" as "zip", "res_partner"."city" as "city", "res_partner"."state_id" as "state_id", "res_partner"."country_id" as "country_id", "res_partner"."partner_latitude" as "partner_latitude", "res_partner"."partner_longitude" as "partner_longitude", "res_partner"."mobile" as "mobile", "res_partner"."is_company" as "is_company", "res_partner"."industry_id" as "industry_id", "res_partner"."company_id" as "company_id", "res_partner"."color" as "color", "res_partner"."partner_share" as "partner_share", "res_partner"."commercial_partner_id" as "commercial_partner_id", "res_partner"."commercial_company_name" as "commercial_company_name", "res_partner"."company_name" as "company_name", "res_partner"."message_main_attachment_id" as "message_main_attachment_id", "res_partner"."email_normalized" as "email_normalized", "res_partner"."message_bounce" as "message_bounce", "res_partner"."email" as "email", "res_partner"."phone" as "phone", "res_partner"."user_id" as "user_id", "res_partner"."signup_token" as "signup_token", "res_partner"."signup_type" as "signup_type", "res_partner"."signup_expiration" as "signup_expiration", "res_partner"."calendar_last_notif_ack" as "calendar_last_notif_ack", "res_partner"."phone_sanitized" as "phone_sanitized", "res_partner"."partner_gid" as "partner_gid", "res_partner"."additional_info" as "additional_info", "res_partner"."debit_limit" as "debit_limit", "res_partner"."last_time_entries_checked" as "last_time_entries_checked", "res_partner"."invoice_warn" as "invoice_warn", "res_partner"."invoice_warn_msg" as "invoice_warn_msg", "res_partner"."supplier_rank" as "supplier_rank", "res_partner"."customer_rank" as "customer_rank", "res_partner"."team_id" as "team_id", "res_partner"."sale_warn" as "sale_warn", "res_partner"."sale_warn_msg" as "sale_warn_msg", "res_partner"."linkedin" as "linkedin", "res_partner"."facebook" as "facebook", "res_partner"."skype" as "skype", "res_partner"."create_uid" as "create_uid", "res_partner"."create_date" as "create_date", "res_partner"."write_uid" as "write_uid", "res_partner"."write_date" as "write_date" FROM "res_partner" WHERE "res_partner".id IN (2)
+ERROR: column res_partner.linkedin does not exist
+LINE 1: ..."res_partner"."sale_warn_msg" as "sale_warn_msg", "res_partn...
+                                                             ^
+
+2021-01-18 02:25:26,393 22370 ERROR arrowhitech-13-1 odoo.addons.base.models.ir_cron: Unexpected exception while processing cron job {'id': 11, 'ir_actions_server_id': 211, 'cron_name': 'Partner Autocomplete : Sync with remote DB', 'user_id': 1, 'active': True, 'interval_number': 60, 'interval_type': 'minutes', 'numbercall': -1, 'doall': False, 'nextcall': datetime.datetime(2021, 1, 13, 11, 7, 23), 'lastcall': datetime.datetime(2021, 1, 13, 10, 7, 26), 'priority': 5, 'create_uid': 1, 'create_date': datetime.datetime(2021, 1, 8, 8, 7, 23, 522614), 'write_uid': 1, 'write_date': datetime.datetime(2021, 1, 8, 8, 7, 23, 522614)}
+Traceback (most recent call last):
+  File "/aht/www/odoo/odoo/odoo/api.py", line 790, in get
+    return field_cache[record._ids[0]]
+KeyError: 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/aht/www/odoo/odoo/odoo/fields.py", line 948, in __get__
+    value = env.cache.get(record, self)
+  File "/aht/www/odoo/odoo/odoo/api.py", line 793, in get
+    raise CacheMiss(record, field)
+odoo.exceptions.CacheMiss: 'res.users(1,).tz'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/aht/www/odoo/odoo/odoo/api.py", line 790, in get
+    return field_cache[record._ids[0]]
+KeyError: 2
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/aht/www/odoo/odoo/odoo/fields.py", line 948, in __get__
+    value = env.cache.get(record, self)
+  File "/aht/www/odoo/odoo/odoo/api.py", line 793, in get
+    raise CacheMiss(record, field)
+odoo.exceptions.CacheMiss: 'res.partner(2,).tz'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/aht/www/odoo/odoo/odoo/addons/base/models/ir_cron.py", line 238, in _process_jobs
+    registry[cls._name]._process_job(job_cr, job, lock_cr)
+  File "/aht/www/odoo/odoo/odoo/addons/base/models/ir_cron.py", line 139, in _process_job
+    now = fields.Datetime.context_timestamp(cron, datetime.now())
+  File "/aht/www/odoo/odoo/odoo/fields.py", line 1845, in context_timestamp
+    tz_name = record._context.get('tz') or record.env.user.tz
+  File "/aht/www/odoo/odoo/odoo/fields.py", line 999, in __get__
+    self.compute_value(recs)
+  File "/aht/www/odoo/odoo/odoo/fields.py", line 1138, in compute_value
+    records._compute_field_value(self)
+  File "/aht/www/odoo/odoo/odoo/models.py", line 4055, in _compute_field_value
+    field.compute(self)
+  File "/aht/www/odoo/odoo/odoo/fields.py", line 553, in _compute_related
+    record[self.name] = self._process_related(value[self.related_field.name])
+  File "/aht/www/odoo/odoo/odoo/models.py", line 5658, in __getitem__
+    return self._fields[key].__get__(self, type(self))
+  File "/aht/www/odoo/odoo/odoo/fields.py", line 976, in __get__
+    recs._fetch_field(self)
+  File "/aht/www/odoo/odoo/odoo/models.py", line 3066, in _fetch_field
+    self._read(fnames)
+  File "/aht/www/odoo/odoo/odoo/models.py", line 3133, in _read
+    cr.execute(query_str, params + [sub_ids])
+  File "<decorator-gen-3>", line 2, in execute
+  File "/aht/www/odoo/odoo/odoo/sql_db.py", line 101, in check
+    return f(self, *args, **kwargs)
+  File "/aht/www/odoo/odoo/odoo/sql_db.py", line 298, in execute
+    res = self._obj.execute(query, params)
+psycopg2.ProgrammingError: column res_partner.linkedin does not exist
+LINE 1: ..."res_partner"."sale_warn_msg" as "sale_warn_msg", "res_partn...
+                                                             ^
+
+2021-01-18 02:25:26,395 22370 INFO arrowhitech-13-1 odoo.addons.base.models.ir_cron: Starting job `Publisher: Update Notification`.
+2021-01-18 02:25:26,400 22370 ERROR arrowhitech-13-1 odoo.sql_db: bad query: SELECT "res_partner"."id" as "id", "res_partner"."name" as "name", "res_partner"."display_name" as "display_name", "res_partner"."date" as "date", "res_partner"."title" as "title", "res_partner"."parent_id" as "parent_id", "res_partner"."ref" as "ref", "res_partner"."lang" as "lang", "res_partner"."tz" as "tz", "res_partner"."vat" as "vat", "res_partner"."website" as "website", "res_partner"."comment" as "comment", "res_partner"."credit_limit" as "credit_limit", "res_partner"."active" as "active", "res_partner"."employee" as "employee", "res_partner"."function" as "function", "res_partner"."type" as "type", "res_partner"."street" as "street", "res_partner"."street2" as "street2", "res_partner"."zip" as "zip", "res_partner"."city" as "city", "res_partner"."state_id" as "state_id", "res_partner"."country_id" as "country_id", "res_partner"."partner_latitude" as "partner_latitude", "res_partner"."partner_longitude" as "partner_longitude", "res_partner"."mobile" as "mobile", "res_partner"."is_company" as "is_company", "res_partner"."industry_id" as "industry_id", "res_partner"."company_id" as "company_id", "res_partner"."color" as "color", "res_partner"."partner_share" as "partner_share", "res_partner"."commercial_partner_id" as "commercial_partner_id", "res_partner"."commercial_company_name" as "commercial_company_name", "res_partner"."company_name" as "company_name", "res_partner"."message_main_attachment_id" as "message_main_attachment_id", "res_partner"."email_normalized" as "email_normalized", "res_partner"."message_bounce" as "message_bounce", "res_partner"."email" as "email", "res_partner"."phone" as "phone", "res_partner"."user_id" as "user_id", "res_partner"."signup_token" as "signup_token", "res_partner"."signup_type" as "signup_type", "res_partner"."signup_expiration" as "signup_expiration", "res_partner"."calendar_last_notif_ack" as "calendar_last_notif_ack", "res_partner"."phone_sanitized" as "phone_sanitized", "res_partner"."partner_gid" as "partner_gid", "res_partner"."additional_info" as "additional_info", "res_partner"."debit_limit" as "debit_limit", "res_partner"."last_time_entries_checked" as "last_time_entries_checked", "res_partner"."invoice_warn" as "invoice_warn", "res_partner"."invoice_warn_msg" as "invoice_warn_msg", "res_partner"."supplier_rank" as "supplier_rank", "res_partner"."customer_rank" as "customer_rank", "res_partner"."team_id" as "team_id", "res_partner"."sale_warn" as "sale_warn", "res_partner"."sale_warn_msg" as "sale_warn_msg", "res_partner"."linkedin" as "linkedin", "res_partner"."facebook" as "facebook", "res_partner"."skype" as "skype", "res_partner"."create_uid" as "create_uid", "res_partner"."create_date" as "create_date", "res_partner"."write_uid" as "write_uid", "res_partner"."write_date" as "write_date" FROM "res_partner" WHERE "res_partner".id IN (2)
+ERROR: column res_partner.linkedin does not exist
+LINE 1: ..."res_partner"."sale_warn_msg" as "sale_warn_msg", "res_partn...
+                                                             ^
+

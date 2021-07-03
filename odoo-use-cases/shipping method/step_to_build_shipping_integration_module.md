@@ -16,7 +16,7 @@ Nói chung là chuyển sang làm cái Ahamove trước, vì api của nó dễ 
 `depends`: [`delivery`]
 
 **models**
-- `AhamoveProvider`:
+- `Ahamove`:
   - attributes:
     - `_inherit`: `delivery.carrier`
     - `delivery_type`: thêm lựa chọn `Ahamove`
@@ -30,9 +30,17 @@ Nói chung là chuyển sang làm cái Ahamove trước, vì api của nó dễ 
     - `ahamove_get_return_label()`
     - `ahamove_cancel_shipment()`: call api cancel order
 
+- Thêm một model để lưu các service type của ahamove
+
 **libraries**
 - requests, werkzeugh.url (dùng lúc viết hàm để lấy/refresh token)
 - json
 - UserError (odoo.exceptions)
 - logging (print log in debug mode)
 - request (odoo.http) (dùng lúc gọi api)
+
+**method**
+
+- Create Order:
+  - GET, POST
+  - Parameters
