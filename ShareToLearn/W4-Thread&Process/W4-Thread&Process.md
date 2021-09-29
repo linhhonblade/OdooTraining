@@ -22,11 +22,52 @@ header-include: |
 
 # Thread & Process
 
-## What?
+## What is Process?
+
+### Process
+
+::: columns
+:::: column
 
 - **Process** is a program in execution state
-- **Thread** is a lightweight process
-- A **process** can have multiple **threads**
+- Process Control Block (PCB) is the brain of process
+
+::::
+:::: column
+
+![Process Components](images/process_components.jpg){width=60%}
+
+::::
+:::
+
+## What is Thread?
+
+### Thread
+
+- a single flow of execution
+- belongs to a process
+- can be considered as a lightweight process
+
+## Single-threaded process
+
+- Default
+- Only one thread per process
+
+## Multi-threaded process
+
+::: columns
+:::: column
+
+- More than one thread per process
+- Share memory allocation (heap, global data) among threads
+- Different stack
+
+::::
+:::: column
+
+![Multi-threaded process](images/ThreadDiagram.jpg){width=60%}
+
+::::
 
 ## Why
 
@@ -48,5 +89,7 @@ header-include: |
 ## Why Python GIL?
 
 ## Pros and Cons
+
+# In Odoo
 
 
