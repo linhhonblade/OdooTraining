@@ -161,4 +161,10 @@ Multi-core is **everywhere** now
 
 # In Odoo
 
+## Multiprocessing and Threading in Odoo
+
+- Odoo includes built-in HTTP servers, using either multithreading or multiprocessing.
+- Multiprocessing is enabled by configuring `a non-zero number of worker processes`
+- In multiprocessing, a dedicated LiveChat worker is automatically started and listening on the `longpolling port` but the client will not connect to it.
+
 
