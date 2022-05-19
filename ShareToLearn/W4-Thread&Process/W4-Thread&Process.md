@@ -117,6 +117,14 @@ header-include: |
 
 You can use **threading** if your program is **network bound** or **multiprocessing** if it's **CPU bound**
 
+## Real app - Multiprocessing
+
+![MPM Prefork (Multi-Process Architecture)](images/apache-prefork.png){width=60%}
+
+## Real app - Multiprocessing, multithreading
+
+![MPM Worker (Multi-threaded Architecture)](images/apache-worker.png){width=60%}
+
 # Python and GIL
 
 ## Back to the old days
@@ -167,4 +175,33 @@ Multi-core is **everywhere** now
 - Multiprocessing is enabled by configuring `a non-zero number of worker processes`
 - In multiprocessing, a dedicated LiveChat worker is automatically started and listening on the `longpolling port` but the client will not connect to it.
 
+## The Odoo workers
 
+**What would happend to Odoo without workers?**
+
+- `--workers <count>`: if `<count>` is not 0 (the default), enables multiprocessing and sets up the specified number of HTTP workers (sub-processes processing HTTP and RPC requests).
+- The `workers number` is different between self-hosted and `Odoo.sh`
+- For Odoo.SH a "worker" is actually a multi-threaded task queue
+
+## The Odoo workers
+
+- 6 or 8 is a minimum, even if you don't have enough CPUs - *Odony*
+- `2 x num_cpus + 1`
+
+## The Odoo workers
+
+- For multi-processing mode, this is in addition to the HTTP worker processes.
+
+- The real limit to the number of workers is the RAM, not the CPUs
+
+- `--limit-memory-hard`: Hard limit on virtual memory, any worker exceeding the limit will be immediately killed without waiting for the end of the current request processing.
+
+- `--limit-memory-soft`: Maximum allowed virtual memory per worker. If the limit is exceeded, the worker is killed and recycled at the end of the current request.
+
+- `--max-cron-threads`: number of workers dedicated to **cron** jobs. Defaults to 2. The workers are threads in multi-threading mode and processes in multi-processing mode.
+- `--no-http`: do not start the HTTP or long-polling workers (may still start `cron` workers)
+
+## Notice when in debug
+
+- Run the server with `--workers=0` to avoid multiprocessing issues that can cause the same breakpoint to be reached twice in two different processes
+- Run the server with `--max-cron-threads=0` to disable the processing of `ir.cron` periodic tasks, which may otherwise trigger while you are stepping through the method, which product unwanted log and side effects
