@@ -25,12 +25,12 @@ header-include: |
 
 Apr 1st 2022
 
-## As an area of psychology
+## An area of psychology
 
-> **Attachment Theory** is an area of psychology that describes the nature of emotional attachment between humans. It begins as children with our attachment to our parents. The nature of this attachment, and how well it’s fostered and cared for, will then influence the nature of our attachment to romantic partners later in our life.
+> **Attachment Theory** is an area of psychology that describes the nature of emotional attachment between humans. 
 
-> -- <cite>Collins, N. L., & Read, S. J. (1990)</cite>
 
+## History
 
 - 1950s
 - Bowlby and Ainsworth
@@ -38,6 +38,8 @@ Apr 1st 2022
 > the nature in which infants get their needs met by their parents significantly contributes to their “attachment strategy” throughout their lives.
 
 > -- <cite>Ainsworth, M. S., & Bowlby, J. (1991</cite>
+
+## Why
 
 - It helps us understand:
   - why your close relationships have succeeded/failed
@@ -55,21 +57,28 @@ Apr 1st 2022
 
 - Harry Harlow
 - emphasizes parent-child attachment relationship and the importance of maternal touch in infant development
+- Attachment != intimate contact
 
 # Stages of Attachments
+
+## 4 Stages of Attachment
 
 - Pre-Attachment (<= 3m):
 - Indiscriminate Attachment (6w-7m): infants start distinguishing between familiar and unfamiliar people, responding more positively to the primary caregiver. 
 - Discriminate Attachment (7-11m): infants show a strong attachment and preference for one specific individual.
 - Multiple Attachments (>9m): children begin to form strong emotional bonds with other caregivers beyond the primary attachment figure.
 
-**Opportunity for attachment**
+## Things affects attachment formation
 
-**Quality caregiving**
+- **Opportunity for attachment**: parent lost, divorce, family abuse, war,..
+
+- **Quality caregiving / Nuturance factor**: responsiveness/ignorance, agree/disagree, encourage/discourage, truth/deceive, lack/excessive, free/restraint, synpathize/coldhearted
 
 # Four Attachment Styles
 
-**Security base**
+## Terminology
+
+**Safe base**
 
 **Attachment Style != Personality**
 
@@ -93,6 +102,8 @@ Apr 1st 2022
 ## Avoidant Attachment Style
 
 - construct their lifestyle in such a way to avoid commitment or too much intimate contact
+- avoid longtern responsibility
+- bad at expressing themself
 
 ## Anxious-Avoidant Attachment Style
 
@@ -106,11 +117,31 @@ Apr 1st 2022
 - Anxious and avoidants frequently end up in relationships with one another
 
 **Secure - Secure**
+
 **Unsecure - Unsecure**
 
 # Can your Attachment Styles change?
+
+## When attachment is fragile
+
+- Workplace
+- School
+- Internet
+- Family
+
+## Why ?
 
 - Some even have successful long-term relationships as an anxious or avoidant
 - Secures are consistently more happy and feel more supported,26 are less likely to become depressed,27 are healthier,28 retain more stable relationships, and become more successful29 than the other types
 - Your attachment style can change over time although it’s **slow** and **difficult**
 - Extreme negative life events, such as divorce, death of child, serious accident, etc., can cause a secure attachment type to fall into a more insecure attachment type
+
+## How ?
+
+![How to change your Attachment Style](attachment_theory_infographic.png)
+
+## We are envolving toward unsecure type
+
+- modenization
+- kindergarten, nursing home
+- from generation to generation
