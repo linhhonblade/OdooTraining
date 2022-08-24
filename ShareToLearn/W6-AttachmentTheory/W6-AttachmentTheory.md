@@ -19,7 +19,7 @@ header-include: |
 # pandoc report.md -t beamer -o slide.pdf
 ---
 
-# What is Attachment Theory 
+# What is Attachment Theory?
 
 ## Intro
 
@@ -37,9 +37,9 @@ Apr 1st 2022
 
 > the nature in which infants get their needs met by their parents significantly contributes to their “attachment strategy” throughout their lives.
 
-> -- <cite>Ainsworth, M. S., & Bowlby, J. (1991</cite>
+> -- <cite>Ainsworth, M. S., & Bowlby, J. (1991)</cite>
 
-## Why
+## Why?
 
 - It helps us understand:
   - why your close relationships have succeeded/failed
@@ -50,7 +50,7 @@ Apr 1st 2022
 
 - Bowlby and Ainsworth
   - the earliest bonds formed by children with their caregivers have a tremendous impact that continues throughout life
-  - attachment as a product of evolutionary processes
+  - attachment as a product of evolutionary processes (The evolutionary theory of attachment)
   - nurturance and responsiveness were the primary determinants of attachment
 
 ## Maternal Deprivation
@@ -72,13 +72,22 @@ Apr 1st 2022
 
 - **Opportunity for attachment**: parent lost, divorce, family abuse, war,..
 
-- **Quality caregiving / Nuturance factor**: responsiveness/ignorance, agree/disagree, encourage/discourage, truth/deceive, lack/excessive, free/restraint, synpathize/coldhearted
+- **Quality caregiving / Nuturance factor**:
+  - responsiveness/ignorance
+  - agree/disagree
+  - encourage/discourage
+  - truth/deceive
+  - lack/excessive
+  - free/restraint
+  - synpathize/coldhearted
 
 # Four Attachment Styles
 
 ## Terminology
 
 **Safe base**
+
+## Terminology
 
 **Attachment Style != Personality**
 
@@ -115,6 +124,8 @@ Apr 1st 2022
 
 - Secure Styles are capable of dating (or handling, depending on your perspective) both anxious and avoidant types
 - Anxious and avoidants frequently end up in relationships with one another
+
+## Relationship Configuration
 
 **Secure - Secure**
 

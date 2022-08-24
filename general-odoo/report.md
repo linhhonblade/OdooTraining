@@ -182,7 +182,6 @@ Digest email: subscribe/unsubscribe, edit, create
     \end{column}
     \begin{column}{.5\textwidth}
     \begin{block}{}
-    \includegraphics[width=0.5\textwidth]{field.png}
     \end{block}
     \end{column}
   \end{columns}
