@@ -25,7 +25,7 @@ header-include: |
 
 > Making applications that run at web-scale is hard work.
 
-**Web-scale**: Systems that claim to be **Web-scale** are able to handle rapid growth efficiently and not have bottlenecks that require re-architecting at critical moments
+Systems that claim to be **web-scale** are able to handle rapid growth efficiently and not have bottlenecks that require re-architecting at critical moments
 
 ## What is 12-Factor App
 
@@ -34,6 +34,10 @@ header-include: |
 - a set of design principles for making application horizontally scalable
 
 Source: <https://12factor.net>
+
+## Who
+
+Any developer building applications which run as a service. Ops engineers who deploy or manage such applications.
 
 ## Why
 
@@ -44,6 +48,65 @@ Source: <https://12factor.net>
 - avoid common problems
 
 # The 12 factors
+
+## Overview
+
+::: columns
+:::: column
+
+**Codebase**
+
+One codebase tracked in revision control, many deploys
+
+**Dependencies**
+
+Explicitly declare and isolate dependencies
+
+**Configuration**
+
+Store config in the environment
+
+**Backing Services**
+
+Treat backing services as attached resources
+
+**Build, release, run**
+
+Strictly separate build and run stages
+
+**Processes**
+
+Execute the app as one or more stateless processes
+
+::::
+:::: column
+
+**Port binding**
+
+Export services via port binding
+
+**Concurrency**
+
+Scale out via the process model
+
+**Disposability**
+
+Maximize robustness with fast startup and graceful shutdown
+
+**Dev/prod parity**
+
+Keep development, staging, and production as similar as possible
+
+**Logs**
+
+Treat logs as event streams
+
+**Admin processes**
+
+Run admin/management tasks as one-off processes
+
+::::
+:::
 
 ## 1. Codebase
 
@@ -56,7 +119,7 @@ Source: <https://12factor.net>
   - If there are multiple codebases, it’s not an app
   - Multiple apps sharing the same code is a violation of twelve-factor.
 
-- Many deployes of one app
+- Many deploys of one app
 
 ::::
 :::: column
@@ -65,6 +128,12 @@ Source: <https://12factor.net>
 
 ::::
 :::
+
+## 1. Codebase - Q
+
+- Example of violation?
+- Odoo EE vs Odoo CE?
+- Git submodules?
 
 ## 2. Dependencies
 
