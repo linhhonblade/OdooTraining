@@ -44,6 +44,15 @@ Trong số những thứ bạn có thể theo đuổi trong cuộc sống, thứ
 - Triết lý của chủ nghĩa Khắc kỷ không phải là lựa chọn duy nhất
 - Bất kể cuối cùng một người lựa chọn tuân theo triết lý sống nào thì họ cũng sẽ có một cuộc sống tốt đẹp hơn so với không có một triết lý sống nhất quán
 
+## Đạo đức là hạnh phúc
+
+- Sự tự chủ
+- Dũng cảm
+- Công bằng
+- Khôn ngoan
+
+Chúng ta không thể kiểm soát hoặc dựa vào bất kỳ điều gì, ngoài "lựa chọn lý trí" của chúng ta.
+
 # Sự hình thành
 
 ## Khắc kỷ Hy Lạp
@@ -92,4 +101,11 @@ Suy ngẫm >< Lo lắng
 
 ## Tưởng tượng tiêu cực
 
-> Đừng nên dành `tình yêu quá mức` đối với những thứ mình yêu thích
+> Đừng nên dành `tình yêu quá mức` đối với những thứ mình yêu thích. Ngược lại phải cố gắng trở thành "người sử dụng", chứ đừng làm nô lệ cho những món quà của Vận mệnh. - Seneca
+
+## Sự lưỡng phân của quyền kiểm soát
+
+| Mục | Ví dụ | Lời khuyên của Epictetus |
+|-------|-------|-------|
+| Những thứ ta có toàn quyền kiểm soát |    | ef fe |
+| ef fe | ef fe | ef fe |
