@@ -205,6 +205,9 @@ Odoo Master Process (PID 1000)
 - Cron Workers:
   - Run scheduled actions (ir.cron jobs).
   - Number controlled by max_cron_threads config.
+  
+
+
 - Queue Job Workers (from queue_job module):
   - Dedicated to running background job queue tasks.
   - Launched separately via a command like:
