@@ -45,6 +45,17 @@ header-include: |
 
 # Caching Strategies
 
+| Strategy Name                  | Mô tả                                                | Tốt cho                                     |
+| ------------------------------ | ---------------------------------------------------- | ------------------------------------------- |
+| **Read-through**               | Nếu cache miss → tự fetch từ DB rồi populate cache   | Transparent caching                         |
+| **Write-through**              | Ghi vào cache *và* DB đồng thời                      | Strong consistency                          |
+| **Write-behind / Write-back**  | Ghi vào cache, rồi async ghi DB sau                  | High write throughput, eventual consistency |
+| **Cache-aside (lazy loading)** | App tự fetch từ DB nếu cache miss, và cập nhật cache | Flexible, simple                            |
+| **Refresh-ahead**              | Cache proactively làm mới trước khi hết hạn          | Predictable access patterns                 |
+| **TTL (time-based expiry)**    | Dữ liệu hết hạn sau thời gian cố định                | Semi-static data (e.g. config, pricing)     |
+| **Manual Invalidation**        | Cache bị xóa bởi một event hoặc logic tùy chỉnh      | Full control                                |
+
+
 ## 1, Cache-aside (Lazy caching)
 
 - App kiểm tra cache trước → nếu không có → truy DB → lưu vào cache.
